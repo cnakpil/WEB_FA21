@@ -1,10 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Week 2 Notes</title>
+    <title>Week 2</title>
   </head>
-
   <body>
-
+    <section id="pagetop">
+      <!-- section id allows for identification of the different sections -->
+      <h1>Welcome to my Site</h1>
+      <p>This is my website</p>
+    </section>
+    <section id="pagecontent">
+      <img src="assets/cat.jpg" style="width:30vw" alt="Picture of calico cat"/>
+        <!-- vw = view width. 10vw == 10% of width -->
+        <!-- alt text describes the image for screen readers or broken formatting -->
+      <p>This paragraph <a href="https://www.google.com" target = "blank">contains</a> an external link.</p>
+        <!-- external links must have "https://" in front of it -->
+        <!-- "target = blank" tells browser where to open the link (html targeting) -->
+      <h2>This header also <a href="second.html" target="blank">contains a link</a>.</h2>
+        <!-- this line links to a local document page -->
+    </section>
+    <section id="footer">
+      <p><a href="#pagetop">Back to top</a></p>
+        <!-- href links to the pagetop section -->
+    </section>
   </body>
 </html>
