@@ -1,0 +1,18 @@
+ul{
+  color:red;
+  font-family:cursive;
+  font-weight: 600;
+}
+img{
+  width: 20vw;
+}
+h1{
+  font-family: tahoma;
+  font-size: 50px;
+}
+#pagetop{
+  background-color:yellow;
+}
+#form1{
+  background-color:purple;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Week 4: Cascading Style Sheets 1</title>
+    <!-- This is external styling. Links the style.css to index.html -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+    /* If the style is here, called internal styling */
+    /* name of tag to style - single tag style example for unordered lists */
+    </style>
+  </head>
+  <body>
+    <section id="pagetop">
+      <h1>This is a Top Header</h1>
+      <ul>
+        <li>Coffee</li>
+        <li>Tea:
+          <ul style="color:aquamarine">
+            <!-- inline styling, top level affects everything below it - Cascading -->
+            <!-- can also use hex codes or rbg -->
+            <li>Black</li>
+            <li>Green</li>
+          </ul>
+        </li>
+        <li>Water</li>
+      </ul>
+    </section>
+
+    <section id="form1">
+      <form class="" action="index.html" method="post">
+        <label for="fname">First name:</label><br>
+        <input type="text" name="fname"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" name="lname"><br>
+        <input type="radio" id="coffee"><label for="coffee">Coffee</label><br>
+        <input type="radio" id="tea"><label for="tea">Tea</label><br>
+        <input type="radio" id="water"><label for="water">Water</label><br>
+
+        <button type="button" id="submit">Submit</button>
+      </form>
+
+      <a href="#pagetop">Back to Top</a>
+    </section>
+
+  </body>
+</html>
