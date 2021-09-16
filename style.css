@@ -1,12 +1,51 @@
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Mulish&display=swap" rel="stylesheet">
 body{
-  font-family: 'Mulish', sans-serif;
+  font-family: 'quasimoda', serif;
   font-weight: 400;
+  font-size: 18px;
 }
-h1{
-  font-family: 'Merriweather', serif;
+ul{
+  font-family: 'quasimoda', sans-serif;
+  font-style: normal;
   font-weight: 400;
+  font-size: 18px;
+}
+a:link{
+  color: #EF5B5B;
+}
+a:visited{
+  color: #7C9082;
+}
+a:hover{
+  font-weight: 600;
+}
+
+h1{
+  font-family: 'muli', sans-serif;
+  font-weight: bold;
   font-size: 50px;
+}
+h2{
+  font-family: 'muli', sans-serif;
+  font-weight: bold;
+  font-size: 45px;
+}
+h3{
+  font-family: 'muli', sans-serif;
+  font-weight: bold;
+  font-size: 35px;
+}
+h4{
+  font-family: 'muli', sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+}
+h5{
+  font-family: 'muli', sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+}
+h6{
+  font-family: 'muli', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
 }
