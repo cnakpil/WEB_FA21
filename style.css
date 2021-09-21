@@ -2,18 +2,30 @@ body{
   font-family: 'quasimoda', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 2.35vw;
+  font-size: 18px;
 }
 ul{
   font-family: 'quasimoda', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 2.35vw;
+  font-size: 18px;
+}
+a:link{
+  color: #EF5B5B;
+  text-decoration: none;
+}
+a:visited{
+  color: #7C9082;
+  text-decoration: none;
+}
+a:hover{
+  font-weight: 600;
+  text-decoration: underline;
 }
 h1{
   font-family: 'muli', sans-serif;
   font-weight: bold;
-  font-size: 5vw;
+  font-size: 50px;
 }
 h2{
   font-family: 'muli', sans-serif;
@@ -39,35 +51,4 @@ h6{
   font-family: 'muli', sans-serif;
   font-weight: bold;
   font-size: 20px;
-}
-
-/* classes are good for specific styling that is repeated often within code */
-.grey{
-  color: rgb(100,100,100);
-}
-.background{
-  background-color: rgb(225,225,255);
-}
-p.background{
-  color: red;
-}
-span{
-  color: green;
-  font-weight:bold;
-}
-hr{
-  border: dashed rgb(255,200,100) 2px;
-}
-
-a:link{
-  color: #EF5B5B;
-  text-decoration: none;
-}
-a:visited{
-  color: #7C9082;
-  text-decoration: none;
-}
-a:hover{
-  font-weight: 600;
-  text-decoration: underline;
 }
