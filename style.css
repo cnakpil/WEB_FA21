@@ -3,6 +3,7 @@ body{
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
+  margin-left: 50px;
 }
 ul{
   font-family: 'quasimoda', sans-serif;
@@ -52,3 +53,6 @@ h6{
   font-weight: bold;
   font-size: 20px;
 }
+/* img{
+  margin-left: 20px;
+} */
