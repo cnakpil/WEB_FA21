@@ -43,6 +43,7 @@ input[type=button]{
 input[type=button]:hover{
   background-color: #ADD41C;
   box-shadow: 0 2px #999;
+  font-weight: 600;
 }
 input[type=button]:active{
   background-color: #414066;
