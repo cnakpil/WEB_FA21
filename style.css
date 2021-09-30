@@ -13,6 +13,15 @@ ul{
   margin-top: 20px;
   margin-bottom: 20px;
 }
+hr{
+  border: 0px;
+  border-color: #B0B0B0;
+  border-top: 1px solid #B0B0B0;
+  border-bottom: 1px solid #B0B0B0;
+  border-radius: 1px;
+}
+
+/* button states */
 button{
   color:#08233e;
   font-family: 'quasimoda', sans-serif;
@@ -35,13 +44,8 @@ button:active{
   box-shadow: 0 0px #666;
   transform: translateY(2px);
 }
-hr{
-  border: 0px;
-  border-color: #B0B0B0;
-  border-top: 1px solid #B0B0B0;
-  border-bottom: 1px solid #B0B0B0;
-  border-radius: 1px;
-}
+
+/* link states */
 a:link{
   color: #EF5B5B;
   text-decoration: none;
@@ -54,6 +58,8 @@ a:hover{
   font-weight: 600;
   text-decoration: underline;
 }
+
+/* headings */
 h1{
   font-family: 'muli', sans-serif;
   font-weight: bold;
@@ -78,11 +84,11 @@ h4{
 }
 h5{
   font-family: 'muli', sans-serif;
-  font-weight: italic;
+  font-weight: bold;
   font-size: 20px;
 }
 h6{
   font-family: 'muli', sans-serif;
-  font-weight: bold;
+  font-weight: italic;
   font-size: 20px;
 }
