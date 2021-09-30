@@ -3,8 +3,9 @@ body{
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  margin-left: 50px;
-  margin-right: 50px;
+  /* margin-left: 50px; */
+  margin: 0px;
+  padding: 0px;
 }
 ul{
   margin-top: 20px;
@@ -59,7 +60,7 @@ h1{
 h2{
   font-family: 'muli', sans-serif;
   font-weight: bold;
-  font-size: 45px;
+  font-size: 40px;
 }
 h3{
   font-family: 'muli', sans-serif;
@@ -70,8 +71,6 @@ h4{
   font-family: 'muli', sans-serif;
   font-weight: bold;
   font-size: 25px;
-  margin-top: 20px;
-  margin-botton: 20px;
 }
 h5{
   font-family: 'muli', sans-serif;
@@ -82,4 +81,26 @@ h6{
   font-family: 'muli', sans-serif;
   font-weight: bold;
   font-size: 20px;
+}
+#hero{
+  width: 100vw;
+  height: 60vh;
+  overflow: hidden;
+  margin: 0px;
+}
+#hero img{
+  width: 100vw;
+  position: relative;
+  bottom: 300px;
+}
+#hero h1{
+  z-index: 1;
+  position: relative;
+  font-size: 5vw;
+  top: 30vh;
+  margin: 0 0 0 7vw;
+}
+#one, #two{
+  margin-left: 7vw;
+  margin-right: 3vw;
 }
