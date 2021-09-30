@@ -8,7 +8,6 @@
   <body>
     <section id="aboutme">
       <h1>Celine Nakpil</h1>
-        <!-- add image later -->
         <img src="assets/katara.png" alt="angy baby">
     </section>
     <section id="description">
@@ -46,15 +45,20 @@
       <ul>
         <li><a href="https://cnakpil.github.io/WEB_FA21/week1/index.html" target="blank">Original About Me Page</a></li>
         <li><a href="https://cnakpil.github.io/WEB_FA21/week2/index.html" target="blank">Encyclopedia Page</a></li>
-        <li><a href="https://cnakpil.github.io/WEB_FA21/week4/index.html" target="blank">About Me V2</a></li>
+        <li><a href="https://cnakpil.github.io/WEB_FA21/week4/index.html" target="blank">Hello Me - Week 4</a></li>
       </ul>
-      <form>
-        <input type="button" value="Don't Click Me" onclick="window.location.href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'" />
-      </form>
+      <button id="button1">Don't Click Me</button>
     </section>
     <hr>
     <footer>
       <p><a href="#aboutme">Back to top</a></p>
     </footer>
+    <script>
+      document.getElementById("button1").addEventListener("click", rickRoll);
+
+      function rickRoll(){
+        window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
+      }
+    </script>
   </body>
 </html>

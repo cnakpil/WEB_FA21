@@ -13,6 +13,28 @@ ul{
   margin-top: 20px;
   margin-bottom: 20px;
 }
+button{
+  color:#08233e;
+  font-family: 'quasimoda', sans-serif;
+  font-size:18px;
+  margin: 0px 20px 20px 20px;
+  padding: 3px 40px 3px 40px;
+  border-radius: 20px;
+  border-width: 0px;
+  background-color: #CEFF1A;
+  transition-duration: 0.4s;
+}
+button:hover{
+  background-color: #ADD41C;
+  box-shadow: 0 2px #999;
+  font-weight: 600;
+}
+button:active{
+  background-color: #414066;
+  color: #FFFFFF;
+  box-shadow: 0 0px #666;
+  transform: translateY(2px);
+}
 hr{
   border: 0px;
   border-color: #B0B0B0;
@@ -31,28 +53,6 @@ a:visited{
 a:hover{
   font-weight: 600;
   text-decoration: underline;
-}
-input[type=button]{
-  color:#08233e;
-  font-family: 'quasimoda', sans-serif;
-  font-size:18px;
-  margin: 0px 20px 20px 20px;
-  padding: 3px 40px 3px 40px;
-  border-radius: 20px;
-  border-width: 0px;
-  background-color: #CEFF1A;
-  transition-duration: 0.4s;
-}
-input[type=button]:hover{
-  background-color: #ADD41C;
-  box-shadow: 0 2px #999;
-  font-weight: 600;
-}
-input[type=button]:active{
-  background-color: #414066;
-  color: #FFFFFF;
-  box-shadow: 0 0px #666;
-  transform: translateY(2px);
 }
 h1{
   font-family: 'muli', sans-serif;
