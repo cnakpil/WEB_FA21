@@ -11,7 +11,7 @@
       <img src="assets/mountain.jpg" alt="mountain pic">
     </section>
     <section id="one">
-      <h1>This is my site!</h1>
+      <h1 id="herotext">This is my site!</h1>
       <p class="grey">Lorem ipsum dolor <span>sit amet</span>, consectetur adipiscing elit. Cras tellus ante, finibus et pharetra ut, aliquet et leo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vestibulum at faucibus sapien, quis suscipit ante. Quisque eu nibh cursus, sodales erat et, laoreet mi. In diam nunc, pellentesque eu laoreet vitae, cursus tristique sapien. Sed dictum tincidunt luctus. Suspendisse porttitor orci nec orci commodo, nec pulvinar nisl condimentum. Morbi dignissim vulputate lacinia. Curabitur et quam quis nunc cursus dictum. Nullam aliquet ac neque nec commodo. Etiam feugiat varius sem eleifend eleifend. Aliquam fermentum dignissim mauris vel euismod.</p>
     </section>
     <hr>
@@ -19,6 +19,23 @@
       <h2>Here's more information about my site</h2>
       <p class="background">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tellus ante, finibus et pharetra ut, aliquet et leo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vestibulum at faucibus sapien, quis suscipit ante. Quisque eu nibh cursus, sodales erat et, laoreet mi. In diam nunc, pellentesque eu laoreet vitae, cursus tristique sapien. Sed dictum tincidunt luctus. Suspendisse porttitor orci nec orci commodo, nec pulvinar nisl condimentum.</p>
       <p class="grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tellus ante, finibus et pharetra ut, aliquet et leo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vestibulum at faucibus sapien, quis suscipit ante. Quisque eu nibh cursus, sodales erat et, laoreet mi. In diam nunc, pellentesque eu laoreet vitae, cursus tristique sapien. Sed dictum tincidunt luctus. Suspendisse porttitor orci nec orci commodo, nec pulvinar nisl condimentum.</p>
+      <button id="button1">YEET</button>
+      <button id="button2">FUCK</button>
     </section>
+    <script type="text/javascript">
+      console.log("javascript working");
+      document.getElementById("button1").addEventListener("click", function(){alert("you pushed the button!")});
+      document.getElementById("button2").addEventListener("click", buttonClicked);
+      document.getElementById("hero").addEventListener("click", heroClicked);
+
+      function buttonClicked(){
+        alert("you clicked the second button!");
+      }
+
+      function heroClicked() {
+        alert("you clicked the hero!");
+        document.getElementById("herotext").innerHTML = "NYOOM";
+      }
+    </script>
   </body>
 </html>
