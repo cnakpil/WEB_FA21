@@ -18,6 +18,8 @@ hr{
   border-bottom: 1px solid #B0B0B0;
   border-radius: 1px;
 }
+
+/* links */
 a:link{
   color: #EF5B5B;
   text-decoration: none;
@@ -30,6 +32,8 @@ a:hover{
   font-weight: 600;
   text-decoration: underline;
 }
+
+/* buttons */
 button{
   color:#08233e;
   font-family: 'quasimoda', sans-serif;
@@ -64,6 +68,8 @@ button:active{
   background-color: #ADD41C;
   color: #08233e;
 }
+
+/* headers */
 h1{
   font-family: 'muli', sans-serif;
   font-weight: bold;
@@ -86,14 +92,16 @@ h4{
 }
 h5{
   font-family: 'muli', sans-serif;
-  font-weight: italic;
+  font-weight: bold;
   font-size: 20px;
 }
 h6{
   font-family: 'muli', sans-serif;
-  font-weight: bold;
+  font-weight: italic;
   font-size: 20px;
 }
+
+/* image image */
 #hero{
   width: 100vw;
   height: 60vh;
@@ -112,6 +120,8 @@ h6{
   top: 30vh;
   margin: 0 0 0 7vw;
 }
+
+/* section */
 #one, #two{
   margin-left: 7vw;
   margin-right: 3vw;
