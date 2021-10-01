@@ -1,0 +1,49 @@
+body{
+  font-family: 'quasimoda', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  margin-left: 50px;
+}
+a:link{
+  color: #EF5B5B;
+  text-decoration: none;
+}
+a:visited{
+  color: #7C9082;
+  text-decoration: none;
+}
+a:hover{
+  font-weight: 600;
+  text-decoration: underline;
+}
+h1{
+  font-family: 'muli', sans-serif;
+  font-weight: bold;
+  font-size: 50px;
+}
+h2{
+  font-family: 'muli', sans-serif;
+  font-weight: bold;
+  font-size: 45px;
+}
+h3{
+  font-family: 'muli', sans-serif;
+  font-weight: bold;
+  font-size: 35px;
+}
+h4{
+  font-family: 'muli', sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+}
+h5{
+  font-family: 'muli', sans-serif;
+  font-weight: italic;
+  font-size: 20px;
+}
+h6{
+  font-family: 'muli', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}

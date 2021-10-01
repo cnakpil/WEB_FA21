@@ -3,8 +3,9 @@ body{
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  margin-left: 50px;
-  margin-right: 50px;
+  /* margin-left: 50px; */
+  margin: 0px;
+  padding: 0px;
 }
 ul{
   margin-top: 20px;
@@ -17,6 +18,8 @@ hr{
   border-bottom: 1px solid #B0B0B0;
   border-radius: 1px;
 }
+
+/* links */
 a:link{
   color: #EF5B5B;
   text-decoration: none;
@@ -29,7 +32,9 @@ a:hover{
   font-weight: 600;
   text-decoration: underline;
 }
-input[type=button]{
+
+/* buttons */
+button{
   color:#08233e;
   font-family: 'quasimoda', sans-serif;
   font-size:18px;
@@ -40,17 +45,31 @@ input[type=button]{
   background-color: #CEFF1A;
   transition-duration: 0.4s;
 }
-input[type=button]:hover{
+button:hover{
   background-color: #ADD41C;
   box-shadow: 0 2px #999;
   font-weight: 600;
 }
-input[type=button]:active{
+button:active{
   background-color: #414066;
   color: #FFFFFF;
   box-shadow: 0 0px #666;
   transform: translateY(2px);
 }
+#button2{
+  color: #FFFFFF;
+  background-color: #414066;
+}
+#button2:hover{
+  background-color: #414066;
+  color: #FFFFFF;
+}
+#button2:active{
+  background-color: #ADD41C;
+  color: #08233e;
+}
+
+/* headers */
 h1{
   font-family: 'muli', sans-serif;
   font-weight: bold;
@@ -59,7 +78,7 @@ h1{
 h2{
   font-family: 'muli', sans-serif;
   font-weight: bold;
-  font-size: 45px;
+  font-size: 40px;
 }
 h3{
   font-family: 'muli', sans-serif;
@@ -70,16 +89,40 @@ h4{
   font-family: 'muli', sans-serif;
   font-weight: bold;
   font-size: 25px;
-  margin-top: 20px;
-  margin-botton: 20px;
 }
 h5{
   font-family: 'muli', sans-serif;
-  font-weight: italic;
+  font-weight: bold;
   font-size: 20px;
 }
 h6{
   font-family: 'muli', sans-serif;
-  font-weight: bold;
+  font-weight: italic;
   font-size: 20px;
+}
+
+/* image image */
+#hero{
+  width: 100vw;
+  height: 60vh;
+  overflow: hidden;
+  margin: 0px;
+}
+#hero img{
+  width: 100vw;
+  position: relative;
+  bottom: 300px;
+}
+#hero h1{
+  z-index: 1;
+  position: relative;
+  font-size: 5vw;
+  top: 30vh;
+  margin: 0 0 0 7vw;
+}
+
+/* section */
+#one, #two{
+  margin-left: 7vw;
+  margin-right: 3vw;
 }
