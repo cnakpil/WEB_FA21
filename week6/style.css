@@ -1,0 +1,42 @@
+body{
+  font-family: 'futura-pt', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  background-color: black;
+  color: white;
+  margin: 25px 50px 75px;
+}
+h1{
+  font-size: 5vw;
+  margin: 0px;
+}
+p{
+  font-size: 2.5vw;
+}
+footer{
+  font-style: italic;
+}
+
+/* links */
+#androids{
+  color: #A4C639;
+}
+#humans{
+  color: #F27405;
+}
+#bytes{
+  color: #2134E6;
+}
+#time{
+  color: #CB0035;
+}
+#flares{
+  color: #DCD61A;
+}
+#fires{
+  color: #FF1A1A;
+}
+a:hover{
+  text-decoration: underline;
+  font-weight: bold;
+}
