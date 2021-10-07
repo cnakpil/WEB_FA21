@@ -11,7 +11,6 @@ function restart(){
   document.getElementById("humans").addEventListener("click", humans);
   document.getElementById("restart").addEventListener("click", restart);
   document.body.style.backgroundImage = 'none';
-
 }
 function androids(){
   document.getElementById("line1").innerHTML = "what do androids dream?";
