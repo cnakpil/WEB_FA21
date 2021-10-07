@@ -1,5 +1,9 @@
+body{
+  background-color:#001935;
+  font-family: 'neue-haas-grotesk-display', sans-serif;
+}
 #quotes{
-  background-color: blue;
+  background-color: white;
   margin: 30vh 35vh 7vw 20vw;
   padding: 8vh 5vw;
   border-radius: 8px;
