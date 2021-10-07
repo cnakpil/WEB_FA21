@@ -9,8 +9,8 @@ function restart(){
   document.getElementById("androids").addEventListener("click", androids);
   document.getElementById("humans").addEventListener("click", humans);
   document.getElementById("restart").addEventListener("click", restart);
+  document.body.style.backgroundImage = 'none';
 }
-
 function androids(){
   document.getElementById("line1").innerHTML = "what do androids dream?";
   document.getElementById("line2").innerHTML = 'moments of life <a id="bytes">stored in bytes</a>/<a id="time">lost to time</a>';
@@ -20,10 +20,12 @@ function androids(){
 function bytes(){
   document.getElementById("line2").innerHTML = "moments of life stored in bytes";
   document.getElementById("line3").innerHTML = "immortality";
+  document.body.style.backgroundImage = "url('./assets/AI.png')";
 }
 function time(){
   document.getElementById("line2").innerHTML = "moments of life lost to time";
   document.getElementById("line3").innerHTML = "gone like tears in rain";
+  document.body.style.backgroundImage = "url('./assets/bladerunner.png')";
 }
 function humans(){
   document.getElementById("line1").innerHTML = "what do humans dream?";
@@ -34,8 +36,10 @@ function humans(){
 function flares(){
   document.getElementById("line2").innerHTML = "of solar flares burning bright";
   document.getElementById("line3").innerHTML = "tiny galaxies";
+  document.body.style.backgroundImage = "url('./assets/galaxies.png')";
 }
 function fires(){
   document.getElementById("line2").innerHTML = "of wildfires burning bright";
   document.getElementById("line3").innerHTML = "scorched from dragon's breath";
+  document.body.style.backgroundImage = "url('./assets/dragon.png')";
 }

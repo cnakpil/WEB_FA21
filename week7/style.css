@@ -2,10 +2,26 @@ body{
   background-color:#001935;
   font-family: 'neue-haas-grotesk-display', sans-serif;
 }
+h1{
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+h6{
+  margin-top: 1vh;
+  margin-left: 1vh;
+  margin-bottom: 2vh;
+}
+hr{
+  margin-top: 0;
+  padding-top: 0;
+}
+p{
+  margin: 4vh 6vw 2vh 6vw;
+}
 #quotes{
   background-color: white;
-  margin: 30vh 35vh 7vw 20vw;
-  padding: 8vh 5vw;
+  margin: 30vh 25vw 7vh 25vw;
+  padding: 2vh 2vw 8vh 2vw;
   border-radius: 8px;
 }
 #flex{
@@ -27,4 +43,5 @@ button{
   border-radius: 8px;
   padding: 1vh 3vw;
   float: right;
+  font-weight:bold;
 }
