@@ -16,22 +16,53 @@ hr{
   padding-top: 0;
 }
 p{
-  margin: 4vh 6vw 2vh 6vw;
+  margin: 4vh 5vw 2vh 6vw;
 }
+
 #quotes{
   background-color: white;
-  margin: 30vh 25vw 7vh 25vw;
+  margin: 20vh 25vw 7vh 25vw;
   padding: 2vh 2vw 8vh 2vw;
   border-radius: 8px;
 }
+#ribbon div{
+  border-style: solid;
+  text-align: left;
+  color: white;
+}
+#flex div{
+  border-style: solid;
+  text-align: center;
+  color: white;
+}
+#ribbon{
+  display: flex;
+  width:auto;
+  margin-top: .5vw;
+}
+#ribbon input{
+  text-align: left;
+  margin: 2vh 0px;
+}
+#ribbon img{
+  top: .5vw;
+  left: 2.5vw;
+  width: 28px;
+}
+.logo{
+  flex-grow: .25;
+}
+.search{
+  flex-grow: 10;
+}
+.icons{
+  flex-grow: 3;
+}
+
 #flex{
   display: flex;
   width:auto;
-  margin: 10px 20vw;
-}
-div{
-  border: 1px solid black;
-  text-align: center;
+  margin: 10px 25vw;
 }
 .flexitem{
   flex-grow: 1;
