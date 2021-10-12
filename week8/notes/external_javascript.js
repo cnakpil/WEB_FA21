@@ -6,9 +6,13 @@ const title = ["burger", "ramen", "paella"];
 
 for(i=0; i<document.getElementsByClassName('options').length; i++){
   document.getElementsByClassName('label')[i].innerHTML = title[i];
-  console.log(document.getElementsByClassName("options")[i].innerHTML);
+
+  //console.log(document.getElementsByClassName("options")[i].innerHTML);
+
   document.getElementsByClassName("options")[i].innerHTML += '<img src="assets/'+ images[i] +'">';
+  // set the id of each section
   document.getElementsByClassName("options")[i].setAttribute("id", title[i]);
+  // call changeColor when the ID of the section when clicked
   document.getElementsByClassName("options")[i].addEventListener("click", function(){changeColor(this.id)})
 }
 
