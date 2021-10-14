@@ -25,40 +25,60 @@ p{
   padding: 2vh 2vw 8vh 2vw;
   border-radius: 8px;
 }
-#ribbon div{
-  border-style: solid;
-  text-align: left;
-  color: white;
+
+#topBar{
+  border-color: #405368;
+  margin-top: 0px;
+  padding-top: 0px;
 }
-#flex div{
+
+/* #ribbon div{
   border-style: solid;
-  text-align: center;
   color: white;
-}
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+} */
 #ribbon{
   display: flex;
+  flex-direction: row;
+  justify-content: center;
   width:auto;
-  margin-top: .5vw;
-}
-#ribbon input{
-  text-align: left;
-  margin: 2vh 0px;
+  margin: 5px 5vw;
+  padding-bottom: 0px;
 }
 #ribbon img{
-  top: .5vw;
-  left: 2.5vw;
-  width: 28px;
+  margin-top: 5px;
+  width: 35px;
 }
 .logo{
-  flex-grow: .25;
+  flex-grow: .1;
 }
 .search{
   flex-grow: 10;
+}
+.search input[type=text]{
+  padding: 6px 25px  6px 25px;
+  width: 30vw;
+  border: none;
+  border-radius: 4px;
+  margin-top: 8px;
+  background-color: #405368;
+  font-weight: bold;
+  font-size: 17px;
+}
+.search input[type=text]::placeholder{
+  color: #B9C0C7;
 }
 .icons{
   flex-grow: 3;
 }
 
+/* bottom flex box */
+#flex div{
+  border-style: solid;
+  text-align: center;
+  color: white;
+}
 #flex{
   display: flex;
   width:auto;
@@ -72,7 +92,13 @@ p{
 }
 button{
   border-radius: 8px;
+  border: 0px;
   padding: 1vh 3vw;
   float: right;
   font-weight:bold;
+  background-color: #00B8FF;
+  color: white;
+}
+button:active{
+  background-color: #00DDFF;
 }
