@@ -20,14 +20,15 @@ const quotes = ["“you'll understand when you're older”<br><br>i am older and
 "kinda funny when english teachers say stuff like “i can tell if you didnt read the book” or “i can tell when people bs their paper” <br><br>no you cant. you can tell when people are bad at bs-ing their paper. i didnt even read the sparknotes and i barely skimmed the wikipedia and you gave me an A. you kneel before my throne unaware that it was born of lies",
 "The risk I took was calculated but man, am I bad at math.",
 "step 1: buy 15 identical cats<br><br>step 2: invite someone over<br><br>step 3: when they ask how many cats you have say “just one but he's really fast”"];
-quoteCount = 0;
-document.getElementById('qbutton').addEventListener("click", newQuote);
+
+qCount = 0;
+
+document.getElementById("qbutton").addEventListener("click", newQuote);
 function newQuote(){
-  document.getElementById("qtext").innerHTML = quotes[quoteCount];
-  // alert("clicked");
-  if(quoteCount>=(quotes.length-1)){
-    quoteCount = 0;
+  document.getElementById("qtext").innerHTML = quotes[qCount];
+  if(qCount>=(quotes.length-1)){
+    qCount = 0;
   }else{
-    quoteCount ++;
+    qCount ++;
   }
 }
