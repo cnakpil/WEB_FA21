@@ -22,6 +22,7 @@ p{
 
 }
 
+/* quotebox styling */
 #quotes{
   background-color: white;
   margin: 20vh 25vw 7vh 25vw;
@@ -30,11 +31,8 @@ p{
 }
 
 /* styling for top nav bar */
-/* header div{
-  border-style: solid;
-  color: white;
-} */
 header{
+  /* creates two item flex box (left/right) for the top bar */
   align-items: center;
   display: flex;
   flex-direction: row;
@@ -46,28 +44,34 @@ header{
   border-color: #405368;
 }
 .left{
+  /* fumblr icon and search */
   flex-grow: 1;
   max-width: 518px;
   align-items: center;
   display: flex;
 }
 .right{
+  /* other fumblr icon flex box */
   align-items: center;
   display: flex;
   justify-content: flex-end;
 }
+.logo{
+  /* fumblr icon flex box element */
+  flex-grow: 1;
+}
 .logo img{
+  /* styling for fumblr icon img */
   margin-top: 0px;
   padding: 0px 8px 0px 5px;
   width: 35px;
 }
-.logo{
-  flex-grow: 1;
-}
 .search{
+  /* search box flex box element */
   flex-grow: 5;
 }
 .search input[type=text]{
+  /* search box styling */
   padding: 10px 25px  7px 25px;
   background-color: #405368;
   font-size: 15px;
@@ -78,9 +82,11 @@ header{
   max-width: 518px;
 }
 .search input[type=text]::placeholder{
+  /* search box text styling */
   color: #B9C0C7;
 }
 .icons{
+  /* right side specific flex box within the right flex box */
   display:flex;
   align-items: center;
   justify-content: center;
@@ -88,26 +94,31 @@ header{
   position: relative;
 }
 .icons img{
+  /* icon img styling */
   width: 35px;
 }
 
-/* bottom flex box */
-#flex div{
-  border-style: solid;
-  text-align: center;
-  color: white;
-}
-#flex{
+/* bottom social media flex box  */
+#socials{
+  /* bottom social media flex box creation */
   display: flex;
   width:auto;
-  margin: 10px 25vw;
+  margin: 60px 35vw;
 }
-.flexitem{
+#socials div{
+  /* socials div styling */
+  text-align: center;
+}
+.socialIcon{
+  /* size of individual icon elements */
   flex-grow: 1;
 }
-.flexitem2{
-  flex-grow: 2;
+.socialIcon img{
+  /* style of icon img */
+  width: 40px;
 }
+
+/* new quote button */
 #qbutton{
   border-radius: 8px;
   border: 0px;
