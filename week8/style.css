@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'hitandrun';
+    src: url('assets/hitandrun-webfont.woff2') format('woff2'),
+         url('assets/hitandrun-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+  font-family:classic-comic, sans-serif;
+  color: #000000;
+}
+h1{
+  font-family: 'hitandrun', sans-serif;
+  font-size: 100pt;
+  color:#EB6900;
+}
+h2{
+  font-family: 'hitandrun', sans-serif;
+  font-size: 50pt;
+}
+h3{
+  font-size: 40pt;
+}
