@@ -28,13 +28,17 @@ h2{
   padding: 0;
 }
 h3{
-  font-size: 2vw;
+  font-size: 1.8vw;
+  line-height: .2;
 }
 h4{
   font-size: 1.6vw;
   line-height: .5;
 }
-
+ul{
+  line-height: 2;
+  text-align: left;
+}
 
 #container{
   border-radius: 35px;
@@ -59,7 +63,7 @@ h4{
 #flex{
   /* background-color: #C7C7C7; */
   display:flex;
-  margin: 7.5vh 2vw;
+  margin: 7.5vh 0vw;
   align-items: center;
   justify-content: space-between;
 }
@@ -76,23 +80,23 @@ h4{
 }
 .blocks{
   border:.4vh solid black;
-  border-radius: 2vw;
+  border-radius: 1.75vw;
   align-items: center;
   text-align: center;
 }
 #weather{
   height: 24.5vh;
-  width: 19vw;
+  width: 20vw;
 }
 #selfcare{
   height: 20.5vh;
-  width: 19vw;
+  width: 20vw;
 }
 #reminder{
   height: 20.5vh;
-  width: 17vw;
+  width: 20vw;
 }
 #schedule{
   height: 24.5vh;
-  width: 17vw;
+  width: 20vw;
 }
