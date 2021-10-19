@@ -6,13 +6,14 @@
     font-style: normal;
 }
 body{
-  font-family:classic-comic, sans-serif;
+  font-family: classic-comic, sans-serif;
   color: #000000;
   background-color: #85d3e6;
 }
 h1{
   font-family: 'hitandrun', sans-serif;
   font-size: 7vw;
+  letter-spacing: .3vw;
   text-align: center;
   color:#EB6900;
   margin: 0;
@@ -27,7 +28,11 @@ h2{
   padding: 0;
 }
 h3{
-  font-size: 40pt;
+  font-size: 2vw;
+}
+h4{
+  font-size: 1.6vw;
+  line-height: .5;
 }
 
 
@@ -42,6 +47,13 @@ h3{
 #date{
   float: right;
   vertical-align: top;
+}
+#scItems{
+  color: #a7c957;
+  margin: 35px 0px 0px 0px;
+  font-size: 5vw;
+  /* font-size: min(50px, 5vw); */
+  /* font-size: max(5vw, 30px); */
 }
 
 #flex{
