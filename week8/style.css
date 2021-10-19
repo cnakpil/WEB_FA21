@@ -28,7 +28,7 @@ h2{
 }
 h3{
   font-size: 1.8vw;
-  line-height: .2;
+  line-height: 0;
 }
 h4{
   font-size: 1.6vw;
@@ -92,12 +92,12 @@ h4{
 }
 #reminder{
   height: 20.5vh;
-  max-height: 140px;
+  max-height: 150px;
   width: 20vw;
 }
 #schedule{
   height: 24.5vh;
-  max-height: 200px;
+  max-height: 170px;
   width: 20vw;
 }
 
