@@ -9,6 +9,7 @@ body{
   font-family: classic-comic, sans-serif;
   color: #000000;
   background-color: #85d3e6;
+  overflow:hidden;
 }
 h1{
   font-family: 'hitandrun', sans-serif;
@@ -66,7 +67,7 @@ header{
   font-size: 5vw;
 }
 
-/* flexbox grid styling */
+/* grid styling */
 #grid{
   /* background-color: #C7C7C7; */
   display: inline-block;
@@ -74,12 +75,13 @@ header{
   /* width: 380px; */
   position:relative;
   top: 20px;
+  right: 10px;
   /* margin: 7.5vh 0vw; */
   align-items: center;
   justify-content: space-between;
 }
 .left{
-  background-color: orange;
+  /* background-color: orange; */
   /* border:1px solid black; */
   display: block;
   position: relative;
@@ -89,7 +91,7 @@ header{
   text-align: center;
 }
 .right{
-  background-color: blue;
+  /* background-color: blue; */
   display:block;
   position: relative;
   left: 275px;
@@ -98,19 +100,20 @@ header{
   text-align: center;
 }
 .blocks{
+  /* background-color: green; */
   border: 3px solid black;
   border-radius: 23px;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+  margin:auto;
+  width: 250px;
 }
 
 /* Weather block styling */
 /* Div structure taken from MS Bing Weather widget */
 #weather{
-  height: 24.5vh;
-  max-height: 170px;
-  width: 20vw;
+  /* height: 24.5vh; */
+  position:relative;
+  height: 185px;
   display: inline-block;
   vertical-align: top;
 }
@@ -141,22 +144,14 @@ header{
 }
 
 #selfcare{
-  height: 20.5vh;
-  max-height: 160px;
-  width: 20vw;
-  /* margin-top: 5vh; */
-}
-#reminder{
-  height: 20.5vh;
-  max-height: 150px;
-  width: 20vw;
-}
-#schedule{
-  height: 24.5vh;
-  max-height: 170px;
-  width: 20vw;
+  position: relative;
+  top: 20px;
+  height: 145px;
 }
 
+#reminder{
+  height: 160px;
+}
 /* check box styling */
 .clist{
   text-align: left;
@@ -222,6 +217,12 @@ header{
 /* end Code from W3Schools */
 
 /* Schedule Styling */
+#schedule{
+  height: 170px;
+  position: relative;
+  top:20px;
+  /* max-height: 170px; */
+}
 #sList{
   list-style: none;
   margin-top: -.5em;
