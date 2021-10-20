@@ -37,10 +37,6 @@ h4{
   line-height: .5;
 }
 
-header{
-  position: relative;
-}
-
 /* white background styling */
 #container{
   border-radius: 35px;
@@ -53,15 +49,14 @@ header{
   background-color: #FFFFFF;
   overflow: hidden;
 }
+
+/* heading styling */
+header{
+  position: relative;
+}
 #date{
   float: right;
   vertical-align: top;
-}
-#scItems{
-  color: #a7c957;
-  text-shadow: 0.5px 0.5px 2px rgb(0 0 0 / 30%);
-  margin: 35px 0px 0px 0px;
-  font-size: 5vw;
 }
 
 /* grid styling */
@@ -69,17 +64,14 @@ header{
   /* background-color: #C7C7C7; */
   display: inline-block;
   height: 380px;
-  /* width: 380px; */
   position:relative;
   top: 20px;
   right: 10px;
-  /* margin: 7.5vh 0vw; */
   align-items: center;
   justify-content: space-between;
 }
 .left{
   /* background-color: orange; */
-  /* border:1px solid black; */
   display: block;
   position: relative;
   top: 20px;
@@ -108,7 +100,6 @@ header{
 /* Weather block styling */
 /* Div structure taken from MS Bing Weather widget */
 #weather{
-  /* height: 24.5vh; */
   position:relative;
   height: 185px;
   display: inline-block;
@@ -140,16 +131,23 @@ header{
   bottom:75px;
 }
 
+/* self care block styling */
 #selfcare{
   position: relative;
   top: 20px;
   height: 145px;
 }
+#scItems{
+  color: #a7c957;
+  text-shadow: 0.5px 0.5px 2px rgb(0 0 0 / 30%);
+  margin: 35px 0px 0px 0px;
+  font-size: 5vw;
+}
 
+/* reminder checklist styling */
 #reminder{
   height: 160px;
 }
-/* check box styling */
 .clist{
   text-align: left;
   float: left;
