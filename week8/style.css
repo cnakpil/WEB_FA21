@@ -106,29 +106,54 @@ header{
   vertical-align: top;
 }
 .wIcon{
-  background-color: grey;
-  width: 75px;
-  height: 75px;
+  /* Temp svg: weather by HideMaru from the Noun Project */
+  /* background-color: grey; */
+  width: 65px;
+  height: 65px;
   position: relative;
-  left: 45px;
+  top: 20px;
+  left: 40px;
   /* margin: 20px 0px 0px 45px; */
 }
 .condiTemp{
-  background-color: green;
+  /* background-color: green; */
   position: relative;
   display: inline-block;
-  bottom: 75px;
-  left: 45px;
-  /* margin: 20px 45px 0px 0px; */
+  bottom: 48px;
+  left: 35px;
 }
 .curTemp{
   font-size: 42.5pt;
-  /* margin-left: 50px; */
+}
+.unitPick{
+  /* background-color: pink; */
+  position:relative;
+  left: 90px;
+  bottom: 60px;
+  width: 15px;
+}
+.pickDiv{
+  /* divider between C+F */
+  position: absolute;
+  top: 20px;
+  left: 2px;
+  width: 12px;
+  border-bottom: 1px solid black;
+}
+.degPick{
+  position: relative;
+}
+.grey{
+  position: relative;
+  color: grey;
 }
 .curCondi{
-  background-color: grey;
+  /* background-color: grey; */
   position: relative;
-  bottom:75px;
+  margin: auto;
+  bottom:90px;
+  font-size: 12pt;
+  line-height: .5;
 }
 
 /* self care block styling */
@@ -141,7 +166,7 @@ header{
   color: #a7c957;
   text-shadow: 0.5px 0.5px 2px rgb(0 0 0 / 30%);
   margin: 35px 0px 0px 0px;
-  font-size: 5vw;
+  font-size: 60px;
 }
 
 /* reminder checklist styling */

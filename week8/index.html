@@ -17,18 +17,27 @@
         <div class="left">
           <div id="weather" class="blocks">
             <div class="wIcon">
-              <p>icon</p>
+              <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 32 40" x="0px" y="0px"><title>expand-weather</title><path d="M16,22.61A6.61,6.61,0,1,1,22.61,16,6.61,6.61,0,0,1,16,22.61Zm0-11.36A4.75,4.75,0,1,0,20.75,16,4.75,4.75,0,0,0,16,11.25Z"/><path d="M16,7.28a.93.93,0,0,1-.93-.94V2.93a.93.93,0,1,1,1.86,0V6.34A.93.93,0,0,1,16,7.28Z"/><path d="M16,30a.93.93,0,0,1-.93-.93V25.66a.93.93,0,1,1,1.86,0v3.41A.93.93,0,0,1,16,30Z"/><path d="M29.07,16.93H25.66a.93.93,0,1,1,0-1.86h3.41a.93.93,0,0,1,0,1.86Z"/><path d="M6.34,16.93H2.93a.93.93,0,1,1,0-1.86H6.34a.93.93,0,1,1,0,1.86Z"/><path d="M25.24,26.17a.93.93,0,0,1-.66-.27l-2.41-2.41a.94.94,0,0,1,0-1.32.92.92,0,0,1,1.32,0l2.41,2.41a.94.94,0,0,1,0,1.32A.93.93,0,0,1,25.24,26.17Z"/><path d="M9.17,10.1a.93.93,0,0,1-.66-.27L6.1,7.42A.93.93,0,0,1,7.42,6.1L9.83,8.51a.93.93,0,0,1-.66,1.59Z"/><path d="M6.76,26.17a.93.93,0,0,1-.66-.27.94.94,0,0,1,0-1.32l2.41-2.41a.93.93,0,1,1,1.32,1.32L7.42,25.9A.93.93,0,0,1,6.76,26.17Z"/><path d="M22.83,10.1a.93.93,0,0,1-.66-.27.94.94,0,0,1,0-1.32L24.58,6.1A.93.93,0,0,1,25.9,7.42L23.49,9.83A.93.93,0,0,1,22.83,10.1Z"/></svg>
             </div>
             <div class="condiTemp">
               <div class="curTemp">
                 38
               </div>
               <div class="unitPick">
-
+                <!-- empty div for short divider -->
+                <div class="pickDiv"></div>
+                <div class="degPick">
+                  F
+                </div>
+                <div class="grey">
+                  C
+                </div>
               </div>
             </div>
             <div class="curCondi">
-              <p>temp</p>
+              <p>precipitation: <span id="precip">9</span>%</p>
+              <p>wind speed: <span id="wind">14</span> MPH</p>
+              <p>humidity: <span id="humidity">14</span>%</p>
             </div>
           </div>
           <div id="selfcare" class="blocks">
