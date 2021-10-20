@@ -12,8 +12,8 @@ body{
 }
 h1{
   font-family: 'hitandrun', sans-serif;
-  font-size: 7vw;
-  letter-spacing: .3vw;
+  font-size: 70pt;
+  letter-spacing: 3px;
   text-align: center;
   color:#EB6900;
   margin: 0;
@@ -22,26 +22,38 @@ h1{
 }
 h2{
   font-family: 'hitandrun', sans-serif;
-  font-size: 2vw;
+  font-size: 18pt;
   margin: 0;
   padding: 0;
 }
 h3{
-  font-size: 1.8vw;
+  font-size: 17pt;
   line-height: .2;
 }
 h4{
-  font-size: 1.6vw;
+  font-size: 15pt;
   line-height: .5;
+}
+
+header{
+  /* background-color: grey; */
+  position: relative;
+  /* top: 5px; */
+  /* left: 4px; */
 }
 
 /* white background styling */
 #container{
   border-radius: 35px;
-  height: 75vh;
-  max-height: 575px;
-  margin: 8vh 25vw 5vh 25vw;
-  padding: 3vh 3vw 5vh 3vw;
+  height: 520px;
+  width: 520px;
+  position: relative;
+  top: 7vh;
+  left: 26vw;
+  /* margin: 8vh 25vw 5vh 25vw; */
+  /* margin: 55px 325px 0px 325px; */
+  /* padding: 3vh 3vw 5vh 3vw; */
+  padding: 30px 40px;
   background-color: #FFFFFF;
 }
 #date{
