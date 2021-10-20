@@ -79,11 +79,42 @@ h4{
   align-items: center;
   text-align: center;
 }
+
+/* Weather block styling */
+/* Div structure taken from MS Bing Weather widget */
 #weather{
   height: 24.5vh;
   max-height: 170px;
   width: 20vw;
+  display: inline-block;
+  vertical-align: top;
 }
+.wIcon{
+  background-color: grey;
+  width: 75px;
+  height: 75px;
+  position: relative;
+  left: 45px;
+  /* margin: 20px 0px 0px 45px; */
+}
+.condiTemp{
+  background-color: green;
+  position: relative;
+  display: inline-block;
+  bottom: 75px;
+  left: 45px;
+  /* margin: 20px 45px 0px 0px; */
+}
+.curTemp{
+  font-size: 42.5pt;
+  /* margin-left: 50px; */
+}
+.curCondi{
+  background-color: grey;
+  position: relative;
+  bottom:75px;
+}
+
 #selfcare{
   height: 20.5vh;
   max-height: 160px;
