@@ -245,15 +245,16 @@ header{
 }
 #sList{
   list-style: none;
-  margin-top: -.5em;
+  position: relative;
+  right: 10px;
+  bottom: 5px;
 }
 #sList li{
   background: url('assets/bullet.png') no-repeat top left;
   background-size:25px;
-  background-position: 0 3.5px;
+  background-position: 0 4px;
   line-height: 2;
   padding: 0 0 4px 30px;
-  margin-left: -.6em;
   text-align: left;
-  font-size: 1.3vw;
+  font-size: 13pt;
 }
