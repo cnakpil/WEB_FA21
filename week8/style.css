@@ -9,7 +9,6 @@ body{
   font-family: classic-comic, sans-serif;
   color: #000000;
   background-color: #85d3e6;
-  overflow:hidden;
 }
 h1{
   font-family: 'hitandrun', sans-serif;
@@ -37,10 +36,7 @@ h4{
 }
 
 header{
-  /* background-color: grey; */
   position: relative;
-  /* top: 5px; */
-  /* left: 4px; */
 }
 
 /* white background styling */
@@ -51,11 +47,9 @@ header{
   position: relative;
   top: 7vh;
   left: 26vw;
-  /* margin: 8vh 25vw 5vh 25vw; */
-  /* margin: 55px 325px 0px 325px; */
-  /* padding: 3vh 3vw 5vh 3vw; */
   padding: 25px 40px;
   background-color: #FFFFFF;
+  overflow: hidden;
 }
 #date{
   float: right;
