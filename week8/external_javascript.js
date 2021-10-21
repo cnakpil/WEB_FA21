@@ -26,12 +26,28 @@ const rWed = ["take walk","do dishes","clean room"];
 const rThur = ["clean kitchen","shower","clean up"];
 const rFri = ["trash run","do dishes","clean floors"];
 const rSat = ["take walk","shower","laundry"];
-const wSun = [rSun, rMon, rTues, rWed, rThur, rFri, rSat];
+const rWeek = [rSun, rMon, rTues, rWed, rThur, rFri, rSat];
+
+// class arrays
+const cSun = ["No class today!"];
+const cMon = ["4:10PM - IMAGE"];
+const cTues = ["9:35AM - WEB", "11:10AM - MIT", "3:55PM - IMAGE"];
+const cWed = ["4:10PM - TEXT"];
+const cThur = ["3:55PM - WEB"];
+const cFri = ["3:30PM - TEXT"];
+const cSat = ["No class today!"];
+const cWeek = [cSun, cMon, cTues, cWed, cThur, cFri, cSat];
 
 // set the array for current day
-let rToday = wSun[dayOfWeek];
+let rToday = rWeek[dayOfWeek];
+let cToday = cWeek[dayOfWeek];
 
-// set lines on page to correct lines for the day of week
+// set reminders on page to correct lines for the day of week
 for(i=0; i<3; i++){
   document.getElementById("check"+(i+1)).innerHTML = rToday[i];
+}
+
+// procedurally generate the class Schedule
+for(i=0; i<cToday.length; i++){
+  document.getElementById("sList").innerHTML += '<li>'+cToday[i]+'</li>';
 }
