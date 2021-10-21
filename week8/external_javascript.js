@@ -51,3 +51,14 @@ for(i=0; i<3; i++){
 for(i=0; i<cToday.length; i++){
   document.getElementById("sList").innerHTML += '<li>'+cToday[i]+'</li>';
 }
+
+// Experiments to toggle fahrenheit and celsius
+// function swapClass(div1, div2, class1, class2){
+//   div1.classList.toggle(class1);
+//   div2.classList.toggle(class2);
+//   document.getElementsByClassName("grey")[0]
+//     .addEventListener("click", function(){swapClass(fahrenheit,celsius,"grey","degPick")});
+// }
+//
+// document.getElementsByClassName("grey")[0]
+//   .addEventListener("click", function(){swapClass(fahrenheit,celsius,"grey","degPick")});
