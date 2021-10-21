@@ -107,7 +107,6 @@ header{
   vertical-align: top;
 }
 .wIcon{
-  /* Temp svg: weather by HideMaru from the Noun Project */
   /* background-color: grey; */
   width: 65px;
   height: 65px;
@@ -234,7 +233,6 @@ header{
   height: 170px;
   position: relative;
   top:20px;
-  /* max-height: 170px; */
 }
 #sList{
   list-style: none;
