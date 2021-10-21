@@ -52,6 +52,33 @@ for(i=0; i<cToday.length; i++){
   document.getElementById("sList").innerHTML += '<li>'+cToday[i]+'</li>';
 }
 
+//get the user's geolocation using geolocation API
+// navigator.geolocation.getCurrentPosition(showPosition);
+//geolocation code from MDN Web Docs: https://developer.mozilla.org/en-US/docs/Web/API/Geolocation/getCurrentPosition
+//I have no idea why the syntax with "``" works. breaks with regular single quotes.
+geo = navigator.geolocation;
+console.log(geo);
+
+var options = {
+  enableHighAccuracy: true,
+  timeout: 5000,
+};
+
+function success(pos) {
+  var cord = pos.coords;
+
+  console.log('Your current position is:');
+  console.log(`Latitude : ${cord.latitude}`);
+  console.log(`Longitude: ${cord.longitude}`);
+  console.log(`More or less ${cord.accuracy} meters.`);
+}
+
+function error(err) {
+  console.warn(`ERROR(${err.code}): ${err.message}`);
+}
+
+navigator.geolocation.getCurrentPosition(success, error, options);
+
 // Experiments to toggle fahrenheit and celsius
 // function swapClass(div1, div2, class1, class2){
 //   div1.classList.toggle(class1);
