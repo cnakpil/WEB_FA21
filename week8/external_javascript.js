@@ -108,6 +108,8 @@ navigator.geolocation.getCurrentPosition(success, error, options);
 
 
 
+
+
 // Experiments to toggle fahrenheit and celsius
 // function swapClass(div1, div2, class1, class2){
 //   div1.classList.toggle(class1);
