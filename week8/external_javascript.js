@@ -65,12 +65,12 @@ var options = {
 };
 
 function success(pos) {
-  var cord = pos.coords;
+  var crd = pos.coords;
 
   console.log('Your current position is:');
-  console.log(`Latitude : ${cord.latitude}`);
-  console.log(`Longitude: ${cord.longitude}`);
-  console.log(`More or less ${cord.accuracy} meters.`);
+  console.log(`Latitude : ${crd.latitude}`);
+  console.log(`Longitude: ${crd.longitude}`);
+  console.log(`More or less ${crd.accuracy} meters.`);
 }
 
 function error(err) {
@@ -78,6 +78,8 @@ function error(err) {
 }
 
 navigator.geolocation.getCurrentPosition(success, error, options);
+
+
 
 // Experiments to toggle fahrenheit and celsius
 // function swapClass(div1, div2, class1, class2){
