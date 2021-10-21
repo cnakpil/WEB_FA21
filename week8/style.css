@@ -58,6 +58,8 @@ header{
 #date{
   float: right;
   vertical-align: top;
+  position:relative;
+  top: 4px;
 }
 
 /* grid styling */
@@ -66,7 +68,7 @@ header{
   display: inline-block;
   height: 380px;
   position:relative;
-  top: 20px;
+  top: 28px;
   right: 10px;
   align-items: center;
   justify-content: space-between;
