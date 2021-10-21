@@ -53,11 +53,8 @@ for(i=0; i<cToday.length; i++){
 }
 
 //get the user's geolocation using geolocation API
-// navigator.geolocation.getCurrentPosition(showPosition);
 //geolocation code from MDN Web Docs: https://developer.mozilla.org/en-US/docs/Web/API/Geolocation/getCurrentPosition
 //I have no idea why the syntax with "``" works. breaks with regular single quotes.
-geo = navigator.geolocation;
-console.log(geo);
 
 var options = {
   enableHighAccuracy: true,
@@ -66,18 +63,47 @@ var options = {
 
 function success(pos) {
   var crd = pos.coords;
+  let latitude = crd.latitude;
+  let longitude = crd.longitude;
 
   console.log('Your current position is:');
   console.log(`Latitude : ${crd.latitude}`);
   console.log(`Longitude: ${crd.longitude}`);
   console.log(`More or less ${crd.accuracy} meters.`);
+
+  getWeather(latitude,longitude);
 }
 
 function error(err) {
   console.warn(`ERROR(${err.code}): ${err.message}`);
 }
 
+//weather API AJAX call
+function getWeather(lat,lon){
+  const apiKey = "ca43d7e77aea23aaed476c34dbc2f17d";
+  const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=imperial`;
+  console.log(lat,lon);
+
+  fetch(url)
+   .then(response => response.json())
+   .then(data => {
+     console.log(data);
+
+     // do stuff with the data
+     console.log(Math.round(data.main.temp));
+     document.getElementById("temp").innerHTML = Math.round(data.main.temp);
+     document.getElementById("humidity").innerHTML = data.main.humidity;
+     document.getElementById("wind").innerHTML = data.wind.speed;
+   })
+   // .catch(() => {
+   //   console.log("ajax error");
+   // });
+}
+
 navigator.geolocation.getCurrentPosition(success, error, options);
+
+
+
 
 
 
