@@ -94,10 +94,11 @@ function getWeather(lat,lon){
      document.getElementById("temp").innerHTML = Math.round(data.main.temp);
      document.getElementById("humidity").innerHTML = data.main.humidity;
      document.getElementById("wind").innerHTML = data.wind.speed;
+     document.getElementById("wthr").innerHTML = data.weather[0].description;
    })
-   // .catch(() => {
-   //   console.log("ajax error");
-   // });
+   .catch(() => {
+     console.log("ajax error");
+   });
 }
 
 navigator.geolocation.getCurrentPosition(success, error, options);
