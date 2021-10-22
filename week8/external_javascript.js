@@ -31,6 +31,7 @@ function weather(){
      .then(data => {
        // console.log(data);
        // do stuff with the data - get data needed and input into html
+       // all icons by P Thanga Vignesh from the Noun Project
        const icon = `assets/weatherIcons/${data.weather[0]["icon"]}.svg`;
        document.getElementById("weatherIcon").innerHTML = `<img src=${icon} alt=${data.weather[0]["main"]}></img>`;
        document.getElementById("temp").innerHTML = Math.round(data.main.temp);
@@ -44,10 +45,12 @@ function weather(){
   }
 
   navigator.geolocation.getCurrentPosition(success, error, options);
+  console.log("ran weather function");
 }
 
-// run weather function every 30 seconds
-setInterval(weather(), 30000);
+// run weather function every 30 seconds after initial run
+weather();
+setInterval(weather, 30000);
 
 // generate random self care task on reload
 const selfCare = ["game", "write", "nap", "cook", "eat", "read"];
