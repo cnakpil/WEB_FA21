@@ -54,7 +54,6 @@ for(i=0; i<cToday.length; i++){
 
 //get the user's geolocation using geolocation API
 //geolocation code from MDN Web Docs: https://developer.mozilla.org/en-US/docs/Web/API/Geolocation/getCurrentPosition
-//I have no idea why the syntax with "``" works. breaks with regular single quotes.
 var options = {
   enableHighAccuracy: true,
   timeout: 5000,
