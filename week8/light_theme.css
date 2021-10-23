@@ -1,45 +1,45 @@
 @font-face {
-    font-family: 'hitandrun';
-    src: url('assets/hitandrun-webfont.woff2') format('woff2'),
-         url('assets/hitandrun-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "hitandrun";
+  src: url("assets/hitandrun-webfont.woff2") format("woff2"),
+    url("assets/hitandrun-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
-body{
+body {
   font-family: classic-comic, sans-serif;
   color: #000000;
   background-color: #85d3e6;
 }
-h1{
-  font-family: 'hitandrun', sans-serif;
+h1 {
+  font-family: "hitandrun", sans-serif;
   font-size: 60pt;
   letter-spacing: 3px;
   text-align: center;
-  color:#EB6900;
+  color: #eb6900;
   text-shadow: 0.5px 0.5px 2px rgb(0 0 0 / 30%);
   margin: 0;
   padding: 0;
   line-height: 1;
 }
-h2{
-  font-family: 'hitandrun', sans-serif;
+h2 {
+  font-family: "hitandrun", sans-serif;
   text-shadow: 0.5px 0.5px 2px rgb(0 0 0 / 30%);
   font-size: 18pt;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
   margin: 0;
   padding: 0;
 }
-h3{
+h3 {
   font-size: 17pt;
-  line-height: .5;
+  line-height: 0.5;
 }
-h4{
+h4 {
   font-size: 15pt;
-  line-height: .5;
+  line-height: 0.5;
 }
 
 /* white background styling */
-#container{
+#container {
   border-radius: 35px;
   height: 530px;
   width: 520px;
@@ -47,33 +47,33 @@ h4{
   top: 7vh;
   left: 26vw;
   padding: 25px 40px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   overflow: hidden;
 }
 
 /* heading styling */
-header{
+header {
   position: relative;
 }
-#date{
+#date {
   float: right;
   vertical-align: top;
-  position:relative;
+  position: relative;
   top: 4px;
 }
 
 /* grid styling */
-#grid{
+#grid {
   /* background-color: #C7C7C7; */
   display: inline-block;
   height: 380px;
-  position:relative;
+  position: relative;
   top: 28px;
   right: 10px;
   align-items: center;
   justify-content: space-between;
 }
-.left{
+.left {
   /* background-color: orange; */
   display: block;
   position: relative;
@@ -82,33 +82,33 @@ header{
   width: 265px;
   text-align: center;
 }
-.right{
+.right {
   /* background-color: blue; */
-  display:block;
+  display: block;
   position: relative;
   left: 275px;
   bottom: 340px;
   height: 360px;
   text-align: center;
 }
-.blocks{
+.blocks {
   /* background-color: green; */
   border: 3px solid black;
   border-radius: 23px;
   text-align: center;
-  margin:auto;
+  margin: auto;
   width: 250px;
 }
 
 /* Weather block styling */
 /* Div structure taken from MS Bing Weather widget */
-#weather{
-  position:relative;
+#weather {
+  position: relative;
   height: 185px;
   display: inline-block;
   vertical-align: top;
 }
-.wIcon{
+.wIcon {
   /* background-color: grey; */
   width: 65px;
   height: 65px;
@@ -116,24 +116,24 @@ header{
   top: 22px;
   left: 43px;
 }
-.condiTemp{
+.condiTemp {
   /* background-color: green; */
   position: relative;
   display: inline-block;
   bottom: 48px;
   left: 35px;
 }
-.curTemp{
+.curTemp {
   font-size: 42.5pt;
 }
-.unitPick{
+.unitPick {
   /* background-color: pink; */
-  position:relative;
+  position: relative;
   left: 90px;
   bottom: 60px;
   width: 15px;
 }
-.pickDiv{
+.pickDiv {
   /* divider between C+F */
   position: absolute;
   top: 20px;
@@ -141,30 +141,30 @@ header{
   width: 12px;
   border-bottom: 1px solid black;
 }
-.degPick{
+.degPick {
   position: relative;
   color: black;
 }
-.grey{
+.grey {
   position: relative;
   color: grey;
 }
-.curCondi{
+.curCondi {
   /* background-color: grey; */
   position: relative;
   margin: auto;
-  bottom:75px;
+  bottom: 75px;
   font-size: 12pt;
-  line-height: .5;
+  line-height: 0.5;
 }
 
 /* self care block styling */
-#selfcare{
+#selfcare {
   position: relative;
   top: 20px;
   height: 145px;
 }
-#scItems{
+#scItems {
   color: #a7c957;
   text-shadow: 0.5px 0.5px 2px rgb(0 0 0 / 30%);
   margin: 35px 0px 0px 0px;
@@ -172,10 +172,10 @@ header{
 }
 
 /* reminder checklist styling */
-#reminder{
+#reminder {
   height: 160px;
 }
-.clist{
+.clist {
   text-align: left;
   display: block;
   position: relative;
@@ -183,18 +183,18 @@ header{
   top: 3px;
   padding-left: 30px;
   font-size: 13pt;
-  line-height: .75;
+  line-height: 0.75;
 }
 /* Hide the browser's default checkbox */
 /* Code from W3Schools: https://www.w3schools.com/howto/howto_css_custom_checkbox.asp */
-.clist input{
+.clist input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
   height: 0;
   width: 0;
 }
-.checkmark{
+.checkmark {
   position: absolute;
   bottom: -2px;
   left: 0;
@@ -203,8 +203,8 @@ header{
   border: 3px solid black;
   border-radius: 6px;
 }
-.clist:hover input ~ .checkmark{
-  background-color:#ccc;
+.clist:hover input ~ .checkmark {
+  background-color: #ccc;
 }
 /* Create the checkmark/indicator (hidden when not checked) */
 .checkmark:after {
@@ -219,10 +219,10 @@ header{
 /* Style the checkmark/indicator */
 .clist .checkmark:after {
   left: 4px;
-  top:0px;
+  top: 0px;
   width: 3px;
   height: 7px;
-  border: solid #EB6900;
+  border: solid #eb6900;
   border-width: 0 3px 3px 0;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
@@ -231,12 +231,12 @@ header{
 /* end Code from W3Schools */
 
 /* Schedule Styling */
-#schedule{
+#schedule {
   height: 170px;
   position: relative;
-  top:20px;
+  top: 20px;
 }
-#sList{
+#sList {
   list-style: none;
   position: relative;
   right: 10px;
@@ -244,9 +244,9 @@ header{
   text-align: left;
   font-size: 13pt;
 }
-#sList li{
-  background: url('assets/bullet.png') no-repeat top left;
-  background-size:25px;
+#sList li {
+  background: url("assets/bullet.png") no-repeat top left;
+  background-size: 25px;
   background-position: 0 4px;
   line-height: 2;
   padding: 0 0 4px 30px;
