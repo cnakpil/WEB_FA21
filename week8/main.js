@@ -97,9 +97,33 @@ function cWeather(){
   console.log("ran celsius weather function");
 }
 
-// run weather function every 30 seconds after initial run
+function onCelClick(){
+  clearInterval();
+  cWeather();
+  setInterval(cWeather, 30000);
+}
+
+function onFClick(){
+  clearInterval();
+  fWeather();
+  setInterval(fWeather, 30000);
+}
+
+// run weather function every 30 seconds after initial run, default to fahrenheit
 fWeather();
 setInterval(fWeather, 30000);
+
+
+
+
+
+
+
+
+
+
+
+
 
 // generate random self care task on reload
 const selfCare = ["game", "write", "nap", "cook", "eat", "read"];
