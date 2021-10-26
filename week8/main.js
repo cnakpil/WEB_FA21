@@ -45,12 +45,13 @@ function weather(){
   }
 
   navigator.geolocation.getCurrentPosition(success, error, options);
-  console.log("ran weather function");
+  console.log("ran fahrenheit weather function");
 }
 
-// run weather function every 30 seconds after initial run
+// run weather function every 30 seconds after initial run, default to fahrenheit
 weather();
 setInterval(weather, 30000);
+
 
 // generate random self care task on reload
 const selfCare = ["game", "write", "nap", "cook", "eat", "read"];
@@ -105,19 +106,3 @@ for(i=0; i<3; i++){
 for(i=0; i<cToday.length; i++){
   document.getElementById("sList").innerHTML += '<li>'+cToday[i]+'</li>';
 }
-
-
-
-
-
-
-// Experiments to toggle fahrenheit and celsius
-// function swapClass(div1, div2, class1, class2){
-//   div1.classList.toggle(class1);
-//   div2.classList.toggle(class2);
-//   document.getElementsByClassName("grey")[0]
-//     .addEventListener("click", function(){swapClass(fahrenheit,celsius,"grey","degPick")});
-// }
-//
-// document.getElementsByClassName("grey")[0]
-//   .addEventListener("click", function(){swapClass(fahrenheit,celsius,"grey","degPick")});
