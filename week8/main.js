@@ -52,7 +52,6 @@ function weather(){
 weather();
 setInterval(weather, 30000);
 
-
 // generate random self care task on reload
 const selfCare = ["game", "write", "nap", "cook", "eat", "read"];
 const random = Math.floor(Math.random() * selfCare.length);
@@ -106,3 +105,24 @@ for(i=0; i<3; i++){
 for(i=0; i<cToday.length; i++){
   document.getElementById("sList").innerHTML += '<li>'+cToday[i]+'</li>';
 }
+
+//switch between css themes
+//code from https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web/
+// Select the button
+// const btn = document.querySelector(".themeButton-toggle");
+// Select the stylesheet <link>
+const theme = document.querySelector("#theme-link");
+console.log(theme);
+
+// Listen for a click on the button
+document.getElementById("themeButton").addEventListener("click", function() {
+  // If the current URL contains "ligh-theme.css"
+  if (theme.getAttribute("href") == "light_theme.css") {
+    // ... then switch it to "dark-theme.css"
+    theme.href = "dark_theme.css";
+  // Otherwise...
+  } else {
+    // ... switch it to "light-theme.css"
+    theme.href = "light_theme.css";
+  }
+});
