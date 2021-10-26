@@ -68,11 +68,21 @@ header {
   height: 30px;
   width: 30px;
   /* background-color:grey; */
+}
+.darkMode{
   background-image: url("assets/todarkmode.svg");
   background-repeat: no-repeat;
 }
-#themeButton:hover {
+.darkMode:hover {
   background-image: url("assets/todarkmodeHover.svg");
+  cursor: pointer;
+}
+.lightMode{
+  background-image: url("assets/tolightmode.svg");
+  background-repeat: no-repeat;
+}
+.lightMode:hover {
+  background-image: url("assets/tolightmodeHover.svg");
   cursor: pointer;
 }
 

@@ -110,17 +110,17 @@ for(i=0; i<cToday.length; i++){
 //code from https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web/
 // Select the stylesheet <link>
 const theme = document.querySelector("#theme-link");
+const btn = document.getElementById("themeButton");
 console.log(theme);
 
 // Listen for a click on the button
-document.getElementById("themeButton").addEventListener("click", function() {
-  // If the current URL contains "ligh-theme.css"
+btn.addEventListener("click", function() {
+  // If the current URL contains "light-theme.css"
   if (theme.getAttribute("href") == "light_theme.css") {
-    // ... then switch it to "dark-theme.css"
     theme.href = "dark_theme.css";
-  // Otherwise...
+    btn.className = btn.className = "lightMode";
   } else {
-    // ... switch it to "light-theme.css"
     theme.href = "light_theme.css";
+    btn.className = btn.className = "darkMode";
   }
 });
