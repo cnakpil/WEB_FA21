@@ -108,8 +108,6 @@ for(i=0; i<cToday.length; i++){
 
 //switch between css themes
 //code from https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web/
-// Select the button
-// const btn = document.querySelector(".themeButton-toggle");
 // Select the stylesheet <link>
 const theme = document.querySelector("#theme-link");
 console.log(theme);
