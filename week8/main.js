@@ -106,14 +106,14 @@ for(i=0; i<cToday.length; i++){
   document.getElementById("sList").innerHTML += '<li class="listItem">'+cToday[i]+'</li>';
 }
 
-//switch between css themes
-//code from https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web/
+// switch between css themes
+// code modified from https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web/
 // Select the stylesheet <link>
 const theme = document.querySelector("#theme-link");
+// get button
 const btn = document.getElementById("themeButton");
+// get list items
 const lItems = document.getElementsByClassName("listItem");
-
-console.log(theme);
 
 // Listen for a click on the button
 btn.addEventListener("click", function() {
@@ -121,14 +121,12 @@ btn.addEventListener("click", function() {
   if (theme.getAttribute("href") == "light_theme.css") {
     theme.href = "dark_theme.css";
     btn.className = "lightMode";
-    for(i=0;i<lItems.length;i++){
-      lItems[i].className = "darkListItem";
+    for(i=0;document.getElementsByClassName("listItem").length;i++){
+      lItems[0].className = "darkListItem";
+      console.log(i);
     }
   } else {
     theme.href = "light_theme.css";
     btn.className = "darkMode";
-    for(i=0;i<lItems.length;i++){
-      lItems[i].className = "listItem";
-    }
   }
 });
