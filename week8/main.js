@@ -103,7 +103,7 @@ for(i=0; i<3; i++){
 
 // procedurally generate the class Schedule
 for(i=0; i<cToday.length; i++){
-  document.getElementById("sList").innerHTML += '<li>'+cToday[i]+'</li>';
+  document.getElementById("sList").innerHTML += '<li class="listItem">'+cToday[i]+'</li>';
 }
 
 //switch between css themes
@@ -111,6 +111,8 @@ for(i=0; i<cToday.length; i++){
 // Select the stylesheet <link>
 const theme = document.querySelector("#theme-link");
 const btn = document.getElementById("themeButton");
+const lItems = document.getElementsByClassName("listItem");
+
 console.log(theme);
 
 // Listen for a click on the button
@@ -118,9 +120,15 @@ btn.addEventListener("click", function() {
   // If the current URL contains "light-theme.css"
   if (theme.getAttribute("href") == "light_theme.css") {
     theme.href = "dark_theme.css";
-    btn.className = btn.className = "lightMode";
+    btn.className = "lightMode";
+    for(i=0;i<lItems.length;i++){
+      lItems[i].className = "darkListItem";
+    }
   } else {
     theme.href = "light_theme.css";
-    btn.className = btn.className = "darkMode";
+    btn.className = "darkMode";
+    for(i=0;i<lItems.length;i++){
+      lItems[i].className = "listItem";
+    }
   }
 });

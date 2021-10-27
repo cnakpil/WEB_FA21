@@ -167,7 +167,7 @@ header {
 }
 .degPick {
   position: relative;
-  color: black;
+  color: #d7d7d7;
 }
 .grey {
   position: relative;
@@ -224,7 +224,7 @@ header {
   left: 0;
   height: 12px;
   width: 12px;
-  border: 3px solid black;
+  border: 3px solid #d7d7d7;
   border-radius: 6px;
 }
 .clist:hover input ~ .checkmark {
@@ -270,8 +270,15 @@ header {
   text-align: left;
   font-size: 13pt;
 }
-#sList li {
+.listItem {
   background: url("assets/bullet.png") no-repeat top left;
+  background-size: 25px;
+  background-position: 0 4px;
+  line-height: 2;
+  padding: 0 0 4px 30px;
+}
+.darkListItem {
+  background: url("assets/darkmodebullet.png") no-repeat top left;
   background-size: 25px;
   background-position: 0 4px;
   line-height: 2;
