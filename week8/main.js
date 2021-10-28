@@ -70,7 +70,6 @@ function weather(){
        // choose icon set to use based on which stylesheet is active
        // all icons by P Thanga Vignesh from the Noun Project
        const themeStyle = theme.getAttribute("href");
-       console.log(themeStyle);
        let icon = "";
        if (themeStyle == "light_theme.css")
         icon = `assets/lightWeatherIcons/${data.weather[0]["icon"]}.svg`;
