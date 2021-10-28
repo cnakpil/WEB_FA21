@@ -68,14 +68,21 @@ header {
   height: 30px;
   width: 30px;
   /* background-color:grey; */
+}
+.darkMode{
   background-image: url("assets/todarkmode.svg");
   background-repeat: no-repeat;
 }
-/* #themeButton img {
-    height: 30px;
-} */
-#themeButton:hover {
+.darkMode:hover {
   background-image: url("assets/todarkmodeHover.svg");
+  cursor: pointer;
+}
+.lightMode{
+  background-image: url("assets/tolightmode.svg");
+  background-repeat: no-repeat;
+}
+.lightMode:hover {
+  background-image: url("assets/tolightmodeHover.svg");
   cursor: pointer;
 }
 
@@ -263,8 +270,15 @@ header {
   text-align: left;
   font-size: 13pt;
 }
-#sList li {
+.listItem {
   background: url("assets/bullet.png") no-repeat top left;
+  background-size: 25px;
+  background-position: 0 4px;
+  line-height: 2;
+  padding: 0 0 4px 30px;
+}
+.darkListItem {
+  background: url("assets/darkmodebullet.png") no-repeat top left;
   background-size: 25px;
   background-position: 0 4px;
   line-height: 2;

@@ -114,19 +114,26 @@ const theme = document.querySelector("#theme-link");
 const btn = document.getElementById("themeButton");
 // get list items
 const lItems = document.getElementsByClassName("listItem");
+const dlItems = document.getElementsByClassName("darkListItem");
 
 // Listen for a click on the button
 btn.addEventListener("click", function() {
+
+  const icon = document.getElementById("weatherIcon");
+  console.log(icon.innerHTML);
+
   // If the current URL contains "light-theme.css"
   if (theme.getAttribute("href") == "light_theme.css") {
     theme.href = "dark_theme.css";
     btn.className = "lightMode";
-    for(i=0;document.getElementsByClassName("listItem").length;i++){
+    for(i=0;i<lItems.length;i++){
       lItems[0].className = "darkListItem";
-      console.log(i);
     }
   } else {
     theme.href = "light_theme.css";
     btn.className = "darkMode";
+    for(i=0;i<dlItems.length;i++){
+      dlItems[0].className = "listItem";
+    }
   }
 });
