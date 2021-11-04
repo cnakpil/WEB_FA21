@@ -101,6 +101,8 @@ const dName = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday",
 const d = new Date();
 let dayOfWeek = d.getDay();
 let day = d.getDate();
+if (day<10)
+  day = "0"+day;
 let month = mName[d.getMonth()];
 let year = d.getFullYear();
 let currentDate = day+" "+month+" "+year;
