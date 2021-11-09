@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://use.typekit.net/saq4dnw.css">
+    <link rel="stylesheet" href="light_theme.css" id="theme-link">
+    <!-- defer the running of the js code to after the html is all loaded, but load the js at the same time as the html. -->
+    <script src="main.js" defer></script>
+    <title>Daily Updates!</title>
+  </head>
+  <body>
+    <section id="container">
+      <header>
+        <span id = themeButton class = darkMode></span>
+        <h2>Today is</h2>
+        <h1 id="day"></h1>
+        <h2 id="date"></h2>
+      </header>
+      <section id="grid">
+        <div class="left">
+          <div id="weather" class="blocks">
+            <div class="wIcon" >
+              <span id="weatherIcon"></span>
+            </div>
+            <div class="condiTemp">
+              <div class="curTemp">
+                <span id="temp"></span>
+              </div>
+              <div class="unitPick">
+                <!-- empty div for short divider -->
+                <!-- <div class="pickDiv"></div> -->
+                <div class="degPick" id="imperial">
+                  °F
+                </div>
+                <!-- <div class="grey" id="metric">
+                  C
+                </div> -->
+              </div>
+            </div>
+            <div class="curCondi">
+              <p>cond: <span id="wthr"></span></p>
+              <p>wind speed: <span id="wind"></span> MPH</p>
+              <p>humidity: <span id="humidity"></span>%</p>
+            </div>
+          </div>
+          <div id="selfcare" class="blocks">
+            <h4>Take a break and</h4>
+            <h4 id="scItems"></h4>
+          </div>
+        </div>
+        <div class="right">
+          <div id="reminder" class="blocks">
+            <h3>Remember to...</h3>
+            <section id="checks">
+              <label class="clist">
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                <span id="check1"></span>
+              </label>
+              <br>
+              <label class="clist">
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                <span id="check2"></span>
+              </label>
+              <br>
+              <label class="clist">
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                <span id="check3"></span>
+              </label>
+            </section>
+          </div>
+          <div id="schedule" class="blocks">
+            <h3>Class Schedule</h3>
+            <ul id="sList">
+            </ul>
+          </div>
+        </div>
+      </section>
+    </section>
+  </body>
+</html>
