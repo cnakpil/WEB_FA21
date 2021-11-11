@@ -2,63 +2,30 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>About me</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Playing with CSS Grid</title>
+    <link rel="stylesheet" href="https://use.typekit.net/saq4dnw.css">
+    <link rel="stylesheet" href="light_theme.css" id="theme-link">
   </head>
   <body>
-    <section id="aboutme">
-      <h1>Celine Nakpil</h1>
-        <img src="assets/katara.png" alt="angy baby">
+    <section>
+      <div class="spacer"></div>
+      <div id="grid1" class="grid-container">
+        <header>
+          <span id = themeButton class = darkMode></span>
+          <h2 id="today">Today is</h2>
+          <h1 id="day">WEDNESDAY</h1>
+          <h2 id="date">10 NOVEMBER 2021</h2>
+        </header>
+          <div class="column" id="left">
+          <div class="grid-item" id="weather">1</div>
+          <div class="grid-item" id="selfcare">2</div>
+        </div>
+        <div class="column" id="right">
+          <div class="grid-item">3</div>
+          <div class="grid-item">4</div>
+        </div>
+      </div>
+      <div class="spacer"></div>
     </section>
-    <section id="description">
-      <h4>Description:</h4>
-      <ul>
-        <li>Pronouns: She/They</li>
-        <li>23 years old</li>
-        <li>Originally from Maryland - moved to CO for college.</li>
-        <li>ADHD, but managed well enough. No need for accomodations.</li>
-        <li>Working for the Boulder County IT Dept.</li>
-        <li>Basic knowledge of Python, C/C++, mySQL.</li>
-        <li>Have played with HTML/CSS/PHP before, <s>nothing in depth</s> these coding modules are currently compiling.</li>
-        <li>Fine with coding, <s>but literally no design sense in this head</s> minimal design knowledge.</li>
-      </ul>
-    </section>
-    <section id="goals">
-      <h4>Goals:</h4>
-      <ul>
-        <li><s>Genuinely, taking a nap sometime in the future would be prime.</s> Complete!</li>
-        <li>Develop a sense of style and color so that my work doesn't look early 2000s ComicSans-esque.
-          <ul>
-            <li>Or rather, learn enough so that I can do that ^^ on purpose.</li>
-            <li>If I can do everything wrong, then I should also be able to do everything right.</li>
-            <li><em>Impeccable logic.</em></li>
-            <li>New goal: Build a glitter hell website that intentionally infuriates visitors.</li>
-          </ul>
-        </li>
-        <li>Acquire cool skills, maybe start looking at jquery and other customizations.</li>
-        <li>If I could learn how to integrate HTML/CSS/PHP with mySQL, that'd be peak too.</li>
-      </ul>
-    </section>
-    <hr>
-    <section id="stuff">
-      <h4>Look, Kat - I Made Stuff:</h4>
-      <ul>
-        <li><a href="https://cnakpil.github.io/WEB_FA21/week1/index.html" target="blank">Original About Me Page</a></li>
-        <li><a href="https://cnakpil.github.io/WEB_FA21/week2/index.html" target="blank">Encyclopedia Page</a></li>
-        <li><a href="https://cnakpil.github.io/WEB_FA21/week4/index.html" target="blank">Hello Me - Week 4</a></li>
-      </ul>
-      <button id="button1">Don't Click Me</button>
-    </section>
-    <hr>
-    <footer>
-      <p><a href="#aboutme">Back to top</a></p>
-    </footer>
-    <script>
-      document.getElementById("button1").addEventListener("click", rickRoll);
-
-      function rickRoll(){
-        window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
-      }
-    </script>
   </body>
 </html>
