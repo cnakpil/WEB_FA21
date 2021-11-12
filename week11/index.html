@@ -5,44 +5,75 @@
     <title>Playing with CSS Grid</title>
     <link rel="stylesheet" href="https://use.typekit.net/saq4dnw.css">
     <link rel="stylesheet" href="light_theme.css" id="theme-link">
+    <script src="main.js" defer></script>
   </head>
   <body>
     <section>
-      <div class="spacer"></div>
-      <div id="grid1" class="grid-container">
-        <header>
-          <span id = themeButton class = darkMode></span>
-          <h2 id="today">Today is</h2>
-          <h1 id="day">WEDNESDAY</h1>
-          <h2 id="date">10 NOVEMBER 2021</h2>
-        </header>
-          <div class="column" id="left">
-          <div class="grid-item" id="weather">
-              <div class="wIcon" >
-                <span id="weatherIcon"> <img src="assets/lightWeatherIcons/01d.svg" alt=""> </span>
-              </div>
-              <div class="condiTemp">
-                <div class="curTemp">
-                  <span id="temp">35</span>
+      <div class="hrCenter">
+        <div class="vertCenter">
+          <div id="grid1" class="grid-container">
+            <header>
+              <span id = themeButton class = darkMode></span>
+              <h2 id="today">Today is</h2>
+              <h1 id="day">FRIDAY</h1>
+              <h2 id="date"></h2>
+            </header>
+              <div class="column" id="left">
+              <div class="grid-item" id="weather">
+                <div class="wIcon" >
+                  <span id="weatherIcon"></span>
                 </div>
-                <div class="unit" id="imperial">
-                  °F
+                <div class="condiTemp">
+                  <div class="curTemp">
+                    <span id="temp"></span>
+                  </div>
+                  <div class="unit" id="imperial">
+                    °F
+                  </div>
+                </div>
+                <div class="curCondi">
+                  <p>cond: <span id="wthr"></span></p>
+                  <p>wind speed: <span id="wind"></span> MPH</p>
+                  <p>humidity: <span id="humidity"></span>%</p>
                 </div>
               </div>
-              <div class="curCondi">
-                <p>cond: cloudy<span id="wthr"></span></p>
-                <p>wind speed: <span id="wind">2</span> MPH</p>
-                <p>humidity: <span id="humidity">22</span>%</p>
+              <div class="grid-item" id="selfcare">
+                <h4>Take a break and</h4>
+                <h4 id="scItems"></h4>
               </div>
+            </div>
+            <div class="column" id="right">
+              <div class="grid-item" id="reminder">
+                <h3>Remember to...</h3>
+                <section id="checks">
+                  <label class="clist">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                    <span id="check1"></span>
+                  </label>
+                  <br>
+                  <label class="clist">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                    <span id="check2"></span>
+                  </label>
+                  <br>
+                  <label class="clist">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                    <span id="check3"></span>
+                  </label>
+                </section>
+              </div>
+              <div class="grid-item" id="schedule">
+                <h3>Class Schedule</h3>
+                <ul id="sList">
+                </ul>
+            </div>
           </div>
-          <div class="grid-item" id="selfcare">2</div>
-        </div>
-        <div class="column" id="right">
-          <div class="grid-item">3</div>
-          <div class="grid-item">4</div>
+          </div>
         </div>
       </div>
-      <div class="spacer"></div>
     </section>
   </body>
 </html>

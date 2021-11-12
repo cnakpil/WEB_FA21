@@ -10,14 +10,16 @@ html {
 }
 body{
   font-family: classic-comic, sans-serif;
-  background-color: #85d3e6;
+  color: #d7d7d7;
+  background-color: #121212;
 }
+
 /* headings */
 h1{
   font-family: "hitandrun", sans-serif;
-  font-size: 4.85em;
+  font-size: 4.85rem;
   letter-spacing: .2rem;
-  color: #eb6900;
+  color: #c76a1f;
   text-shadow: 0.5px 0.5px 2px rgb(0 0 0 / 30%);
   margin: 0;
   padding: 0;
@@ -41,13 +43,14 @@ h4{
   line-height: 0.5;
 }
 
+/* center the grid */
 .hrCenter{
   display: table;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
 }
 .vertCenter{
   display: table-cell;
@@ -56,7 +59,7 @@ h4{
 
 /* grid settings */
 .grid-container {
-  background-color: #ffffff;
+  background-color: rgba(255,255,255,0.09);
   text-align: center;
   display: grid;
   grid-gap: .75rem 1.25rem;
@@ -67,6 +70,9 @@ h4{
   border-radius: 35px;
   margin-left: auto;
   margin-right: auto;
+  width: 400px;
+  /* width: 50%;
+  margin: 0 auto; */
   height: 36rem;
   width: 37rem;
 }
@@ -78,7 +84,6 @@ header{
   margin-top: 1.35rem;
   margin-right: 2.4rem;
   margin-left: 2.4rem;
-  display:inline-block;
   /* background-color: blue; */
 }
 #today{
@@ -140,7 +145,7 @@ header{
   grid-template-rows: 1.2fr 1.3fr;
 }
 .grid-item{
-  border: .23rem solid black;
+  border: .2rem solid #d7d7d7;
   border-radius: 1.5rem;
 }
 
@@ -154,6 +159,7 @@ header{
 }
 .wIcon {
   /* background-color: grey; */
+  min-height: 4.7rem;
   position: relative;
   top: 1.5rem;
   left: 2.5rem;
@@ -192,7 +198,7 @@ header{
   max-height: 9.2rem;
 }
 #scItems {
-  color: #a7c957;
+  color: #8aa549;
   text-shadow: 0.5px 0.5px 2px rgb(0 0 0 / 30%);
   margin: 35px 0px 0px 0px;
   font-size: 4.3rem;
@@ -223,7 +229,7 @@ header{
   left: 0;
   height: 12px;
   width: 12px;
-  border: 3px solid black;
+  border: .2rem solid #d7d7d7;
   border-radius: 6px;
 }
 .clist:hover input ~ .checkmark {
@@ -246,7 +252,7 @@ header{
   top: -4.5px;
   width: 16px;
   height: 7px;
-  border: solid #eb6900;
+  border: solid #c76a1f;
   border-width: 4px 4px 0 0;
   border-radius: 1px;
   -webkit-transform: rotate(135deg);
@@ -256,6 +262,10 @@ header{
 /* end Code from W3Schools */
 
 /* schedule settings */
+#schedule {
+  /* max-height: 10rem; */
+  /* background-color: yellow; */
+}
 #sList {
   list-style: none;
   position: relative;
@@ -277,140 +287,4 @@ header{
   background-position: 0 4px;
   line-height: 2;
   padding: 0 0 4px 30px;
-}
-
-
-
-/* media queries */
-@media screen and (max-width: 635px) {
-  html{
-    font-size: 70%;
-  }
-  body{
-    /* background-color: green; */
-  }
-  .gridContainer{
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  }
-  #grid1{
-    height: 60rem;
-    width: 25rem;
-    border-radius: 2rem;
-  }
-  .grid-item{
-    border: .3rem solid black;
-    width: 22rem;
-  }
-  header{
-    grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    margin-left: 3.4rem;
-    margin-bottom: 0px;
-    padding-bottom: 0px;
-    /* background-color: blue; */
-  }
-  #today{
-    float:none;
-  }
-  #day{
-    margin-top: 0;
-  }
-  #date{
-    float:none;
-  }
-  .column{
-    margin-top: .3rem;
-    margin-bottom: 1rem;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    grid-gap: 1rem;
-    max-height: 25rem;
-    display: grid;
-    justify-content: center;
-  }
-  #left {
-    /* background-color: blue; */
-    margin: revert;
-    margin-left: .625rem;
-    margin-bottom: .2rem;
-    margin-top:0;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 3;
-    grid-row-end:4;
-    grid-template-rows: 1.4fr 1.1fr;
-  }
-  #right {
-    /* background-color: pink; */
-    margin:revert;
-    margin-left: .625rem;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 4;
-    grid-row-end:6;
-    grid-template-rows: 1.2fr 1.3fr;
-  }
-
-  #weather{
-    /* background-color: red; */
-    max-height: 11.5rem;
-  }
-  .wIcon {
-    /* background-color: grey; */
-    position: relative;
-    /* right: 10rem; */
-    left: 5rem;
-    bottom: 5rem;
-    width: 3.8rem;
-  }
-  .condiTemp {
-    /* background-color: green; */
-    position: relative;
-    display: inline-block;
-    /* left: 2rem; */
-    /* bottom: 4.5rem; */
-    height: 5rem;
-    grid-row-start:1;
-    grid-row-end:2;
-    grid-column-start:2;
-    grid-column-end:3;
-  }
-  .curTemp {
-    font-size: 3.6rem;
-    float: left;
-  }
-  .unit {
-    /* background-color: pink; */
-    position: relative;
-    left: 5.3rem;
-    bottom: 4.5rem;
-    width: 1rem;
-  }
-  .curCondi {
-    /* background-color: yellow; */
-    position: relative;
-    line-height: .5rem;
-    /* bottom: 7rem; */
-  }
-
-  #selfcare{
-    /* background-color: yellow; */
-    max-height: 9.2rem;
-  }
-  #selfcare h2 {
-    position:relative;
-    bottom: 1rem;
-    margin-top:0;
-  }
-  #scItems {
-    color: #a7c957;
-    text-shadow: 0.5px 0.5px 2px rgb(0 0 0 / 30%);
-    margin: 3rem 0px 0px 0px;
-    font-size: 4.3rem;
-    line-height: 0;
-  }
-
 }
