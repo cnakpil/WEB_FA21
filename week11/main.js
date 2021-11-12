@@ -109,7 +109,7 @@ let year = d.getFullYear();
 let currentDate = day+" "+month+" "+year;
 
 // Swap in current day of week for header
-// document.getElementById("day").innerHTML = dName[dayOfWeek];
+document.getElementById("day").innerHTML = dName[dayOfWeek];
 // Swap in current date
 document.getElementById("date").innerHTML = currentDate;
 

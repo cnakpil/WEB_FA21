@@ -13,11 +13,10 @@ body{
   color: #d7d7d7;
   background-color: #121212;
 }
-
 /* headings */
 h1{
   font-family: "hitandrun", sans-serif;
-  font-size: 4.85rem;
+  font-size: 4.85em;
   letter-spacing: .2rem;
   color: #c76a1f;
   text-shadow: 0.5px 0.5px 2px rgb(0 0 0 / 30%);
@@ -43,14 +42,13 @@ h4{
   line-height: 0.5;
 }
 
-/* center the grid */
 .hrCenter{
   display: table;
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
 }
 .vertCenter{
   display: table-cell;
@@ -70,9 +68,6 @@ h4{
   border-radius: 35px;
   margin-left: auto;
   margin-right: auto;
-  width: 400px;
-  /* width: 50%;
-  margin: 0 auto; */
   height: 36rem;
   width: 37rem;
 }
@@ -84,6 +79,7 @@ header{
   margin-top: 1.35rem;
   margin-right: 2.4rem;
   margin-left: 2.4rem;
+  display:inline-block;
   /* background-color: blue; */
 }
 #today{
@@ -145,7 +141,7 @@ header{
   grid-template-rows: 1.2fr 1.3fr;
 }
 .grid-item{
-  border: .2rem solid #d7d7d7;
+  border: .23rem solid #d7d7d7;
   border-radius: 1.5rem;
 }
 
@@ -159,7 +155,6 @@ header{
 }
 .wIcon {
   /* background-color: grey; */
-  min-height: 4.7rem;
   position: relative;
   top: 1.5rem;
   left: 2.5rem;
@@ -212,7 +207,7 @@ header{
   left: 2rem;
   padding-left: 2rem;
   font-size: 1.1rem;
-  line-height: 0.75;
+  line-height: 1.5rem;
 }
 /* Hide the browser's default checkbox */
 /* Code from W3Schools: https://www.w3schools.com/howto/howto_css_custom_checkbox.asp */
@@ -225,11 +220,11 @@ header{
 }
 .checkmark {
   position: absolute;
-  bottom: -2px;
+  bottom: .25rem;
   left: 0;
   height: 12px;
   width: 12px;
-  border: .2rem solid #d7d7d7;
+  border: 3px solid #d7d7d7;
   border-radius: 6px;
 }
 .clist:hover input ~ .checkmark {
@@ -262,10 +257,6 @@ header{
 /* end Code from W3Schools */
 
 /* schedule settings */
-#schedule {
-  /* max-height: 10rem; */
-  /* background-color: yellow; */
-}
 #sList {
   list-style: none;
   position: relative;
@@ -287,4 +278,186 @@ header{
   background-position: 0 4px;
   line-height: 2;
   padding: 0 0 4px 30px;
+}
+
+
+
+/* media queries */
+@media screen and (max-width: 635px) {
+  html{
+    font-size: 70%;
+  }
+  body{
+    /* background-color: green; */
+  }
+  .gridContainer{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  }
+  #grid1{
+    height: 57.75rem;
+    width: 23rem;
+    border-radius: 2rem;
+  }
+  .grid-item{
+    border: .3rem solid #d7d7d7;
+    width: 18rem;
+  }
+  header{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    /* margin-right: 3.4rem; */
+    margin-left: 1.3rem;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    /* background-color: blue; */
+    min-width: 20.5rem;
+  }
+  header h1{
+    font-size: 3rem;
+  }
+  #today{
+    float:none;
+  }
+  #day{
+    margin-top: 0;
+  }
+  #date{
+    float:none;
+  }
+  .column{
+    margin-top: .3rem;
+    margin-bottom: 1rem;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-gap: 1rem;
+    max-height: 25rem;
+    display: grid;
+    justify-content: center;
+  }
+  #left {
+    /* background-color: blue; */
+    margin: revert;
+    margin-left: 0rem;
+    margin-right: 1rem;
+    margin-bottom: .2rem;
+    margin-top:0;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end:4;
+    grid-template-rows: 1.4fr 1.1fr;
+  }
+  #right {
+    /* background-color: pink; */
+    margin:revert;
+    margin-left: 0rem;
+    margin-right: 1rem;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end:6;
+    grid-template-rows: 1.2fr 1.3fr;
+  }
+
+  #weather{
+    /* background-color: red; */
+    max-height: 11.5rem;
+  }
+  .wIcon {
+    /* background-color: grey; */
+    position: relative;
+    /* right: 10rem; */
+    left: 3rem;
+    bottom: 4rem;
+    width: 3.8rem;
+  }
+  .condiTemp {
+    /* background-color: green; */
+    position: relative;
+    display: inline-block;
+    height: 5rem;
+    grid-row-start:1;
+    grid-row-end:2;
+    grid-column-start:2;
+    grid-column-end:3;
+  }
+  .curTemp {
+    font-size: 3.6rem;
+    float: left;
+  }
+  .unit {
+    /* background-color: pink; */
+    position: relative;
+    left: 5.3rem;
+    bottom: 4.5rem;
+    width: 1rem;
+  }
+  .curCondi {
+    /* background-color: yellow; */
+    position: relative;
+    line-height: .5rem;
+    /* bottom: 7rem; */
+  }
+
+  #selfcare{
+    /* background-color: yellow; */
+    max-height: 9.2rem;
+  }
+  #selfcare h2 {
+    position:relative;
+    bottom: 1rem;
+    margin-top:0;
+  }
+  #scItems {
+    color: #a7c957;
+    text-shadow: 0.5px 0.5px 2px rgb(0 0 0 / 30%);
+    margin: 3rem 0px 0px 0px;
+    font-size: 4.3rem;
+    line-height: 0;
+  }
+
+label {
+  margin-bottom: 10px;
+  margin-top: 0px;
+  margin-left: 2rem;
+}
+.checkmark {
+  position: absolute;
+  height: 8px;
+  width: 8px;
+  border: 1.5px solid #d7d7d7;
+  border-radius: 2.5px;
+  /* line-height: 0; */
+}
+.clist .checkmark:after {
+  /* background-color: grey; */
+  left: 1px;
+  top: -3px;
+  width: 10px;
+  height: 3px;
+  border: solid #eb6900;
+  border-width: 3px 3px 0 0;
+  border-radius: 1px;
+  -webkit-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+  #schedule {
+    /* background-color: green; */
+    margin-bottom: 2.25rem;
+  }
+  #schedule ul {
+    font-size: 1.2rem;
+    margin-right: 2rem;
+  }
+  .listItem {
+    background-size: 1.7rem;
+  }
+  .darkListItem {
+    background-size: 1.7rem;
+  }
 }

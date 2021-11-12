@@ -206,7 +206,7 @@ header{
   left: 2rem;
   padding-left: 2rem;
   font-size: 1.1rem;
-  line-height: 0.75;
+  line-height: 1.5rem;
 }
 /* Hide the browser's default checkbox */
 /* Code from W3Schools: https://www.w3schools.com/howto/howto_css_custom_checkbox.asp */
@@ -219,7 +219,7 @@ header{
 }
 .checkmark {
   position: absolute;
-  bottom: -2px;
+  bottom: .25rem;
   left: 0;
   height: 12px;
   width: 12px;
@@ -294,23 +294,28 @@ header{
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   }
   #grid1{
-    height: 56.5rem;
-    width: 25rem;
+    height: 57.75rem;
+    width: 23rem;
     border-radius: 2rem;
   }
   .grid-item{
     border: .3rem solid black;
-    width: 22rem;
+    width: 18rem;
   }
   header{
     grid-row-start: 1;
     grid-row-end: 2;
     grid-column-start: 1;
     grid-column-end: 2;
-    margin-left: 3.4rem;
+    /* margin-right: 3.4rem; */
+    margin-left: 1.3rem;
     margin-bottom: 0px;
     padding-bottom: 0px;
     /* background-color: blue; */
+    min-width: 20.5rem;
+  }
+  header h1{
+    font-size: 3rem;
   }
   #today{
     float:none;
@@ -334,7 +339,8 @@ header{
   #left {
     /* background-color: blue; */
     margin: revert;
-    margin-left: .625rem;
+    margin-left: 0rem;
+    margin-right: 1rem;
     margin-bottom: .2rem;
     margin-top:0;
     grid-column-start: 1;
@@ -346,7 +352,8 @@ header{
   #right {
     /* background-color: pink; */
     margin:revert;
-    margin-left: .625rem;
+    margin-left: 0rem;
+    margin-right: 1rem;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 4;
@@ -362,8 +369,8 @@ header{
     /* background-color: grey; */
     position: relative;
     /* right: 10rem; */
-    left: 5rem;
-    bottom: 5rem;
+    left: 3rem;
+    bottom: 4rem;
     width: 3.8rem;
   }
   .condiTemp {
@@ -411,9 +418,45 @@ header{
     line-height: 0;
   }
 
+label {
+  margin-bottom: 10px;
+  margin-top: 0px;
+  margin-left: 2rem;
+}
+.checkmark {
+  position: absolute;
+  height: 8px;
+  width: 8px;
+  border: 1.5px solid black;
+  border-radius: 2.5px;
+  /* line-height: 0; */
+}
+.clist .checkmark:after {
+  /* background-color: grey; */
+  left: 1px;
+  top: -3px;
+  width: 10px;
+  height: 3px;
+  border: solid #eb6900;
+  border-width: 3px 3px 0 0;
+  border-radius: 1px;
+  -webkit-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
 
   #schedule {
     /* background-color: green; */
-    margin-bottom: 1.25rem;
+    margin-bottom: 2.25rem;
+  }
+  #schedule ul {
+    font-size: 1.2rem;
+    margin-right: 2rem;
+  }
+  .listItem {
+    background-size: 1.7rem;
+  }
+  .darkListItem {
+    background-size: 1.7rem;
   }
 }
