@@ -294,7 +294,7 @@ header{
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   }
   #grid1{
-    height: 60rem;
+    height: 56.5rem;
     width: 25rem;
     border-radius: 2rem;
   }
@@ -370,8 +370,6 @@ header{
     /* background-color: green; */
     position: relative;
     display: inline-block;
-    /* left: 2rem; */
-    /* bottom: 4.5rem; */
     height: 5rem;
     grid-row-start:1;
     grid-row-end:2;
@@ -413,4 +411,9 @@ header{
     line-height: 0;
   }
 
+
+  #schedule {
+    /* background-color: green; */
+    margin-bottom: 1.25rem;
+  }
 }
