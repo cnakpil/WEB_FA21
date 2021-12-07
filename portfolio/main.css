@@ -13,19 +13,38 @@ p{
 }
 header{
   position: fixed;
-  top: 0px;
+  display: flex;
+  justify-content: space-between;
+  top: 1rem;
   right: 0px;
   width: 100%;
+  /* border: 1px red solid; */
+}
+.logo{
+  /* background-color: green; */
+  width: 4.5rem;
+  padding-left: 2rem;
+  padding-top: .5rem;
 }
 nav{
-  float: right;
-  display: flex;
   letter-spacing: .1rem;
   font-size: .8rem;
   font-weight: bold;
+  padding-right: 2rem;
+  /* border: 1px blue solid; */
+}
+nav ul{
+  text-align: center;
+  /* border: 1px green solid; */
+}
+nav li{
+  list-style: none;
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  /* border: 1px black solid; */
 }
 nav a{
-
+  text-transform: uppercase;
 }
 
 .blurb{
@@ -38,6 +57,8 @@ nav a{
   /* display: block; */
   text-align: center;
   top:16rem;
+  left: 15rem;
+  max-width: 50rem;
 }
 .name img{
   width: 50rem;
