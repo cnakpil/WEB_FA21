@@ -5,7 +5,18 @@ body{
   font-family: quasimoda, sans-serif;
   font-weight: 400;
   color: black;
+  /* animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards; */
 }
+/* @keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+} */
 p{
   font-size: 1.2rem;
   margin: .5rem;
@@ -15,7 +26,7 @@ header{
   position: fixed;
   display: flex;
   justify-content: space-between;
-  top: 1rem;
+  top: 1.5rem;
   right: 0px;
   width: 100%;
   /* border: 1px red solid; */
@@ -32,10 +43,13 @@ nav{
   font-weight: bold;
   padding-right: 2rem;
   /* border: 1px blue solid; */
+  /* text-align:center; */
+  /* vertical-align: middle; */
 }
 nav ul{
   text-align: center;
   /* border: 1px green solid; */
+  display:inline-block;
 }
 nav li{
   list-style: none;
@@ -45,8 +59,20 @@ nav li{
 }
 nav a{
   text-transform: uppercase;
+  display:inline-block;
+  /* border: 1px green solid; */
 }
-
+nav a:link{
+  color:black;
+  text-decoration:none;
+}
+nav a:visited{
+  color:black;
+  text-decoration:none;
+}
+nav a:hover{
+  color: #ef116f;
+}
 .blurb{
   position:fixed;
   top:12rem;
