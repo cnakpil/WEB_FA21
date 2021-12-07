@@ -3,11 +3,11 @@ html{
 }
 body{
   font-family: quasimoda, sans-serif;
-  font-weight: bold;
-  color: #707070;
+  font-weight: 400;
+  color: black;
 }
 p{
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin: .5rem;
   padding: 0;
 }
@@ -19,20 +19,28 @@ header{
 }
 nav{
   float: right;
+  display: flex;
+  letter-spacing: .1rem;
+  font-size: .8rem;
+  font-weight: bold;
 }
+nav a{
+
+}
+
 .blurb{
   position:fixed;
-  top:20%;
-  left: 12%;
+  top:12rem;
+  left: 2.5rem;
 }
 .name{
   position:absolute;
   /* display: block; */
   text-align: center;
-  top:32%;
+  top:16rem;
 }
 .name img{
-  width: 70vw;
+  width: 50rem;
   position: relative;
   margin: 0;
   padding: 0;
@@ -40,13 +48,14 @@ nav{
 #fName{
   /* background: green; */
   right: 11.5rem;
+  /* bottom: 10rem; */
   /* width: 62vw; */
-  top: .5rem;
 }
 #lName{
   /* background: blue; */
-  right: 5rem;
-  bottom: 2rem;
+  right: 8.9rem;
+  /* top: 12.5rem; */
+  bottom: 4.5rem;
 }
 #particles-js{
   /* color: #707070; */
