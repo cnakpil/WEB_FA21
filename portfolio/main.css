@@ -5,22 +5,23 @@ body{
   font-family: quasimoda, sans-serif;
   font-weight: 400;
   color: #252266;
-  /* animation: fadeInAnimation ease 2s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards; */
 }
-/* @keyframes fadeInAnimation {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-} */
 p{
   font-size: 1.2rem;
   margin: .5rem;
   padding: 0;
+}
+.hCenter{
+  display: table;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.vCenter{
+  display: table-cell;
+  vertical-align: middle;
 }
 header{
   position: fixed;
@@ -62,7 +63,6 @@ nav a{
   display:inline-block;
   /* border: 1px green solid; */
 }
-
 nav a:link{
   color: #252266;
   text-decoration:none;
@@ -71,17 +71,13 @@ nav a:visited{
   color: #252266;
   text-decoration:none;
 }
-/* nav a:hover{
-  color: #ef116f;
-} */
+
 /* nav animation: Copyright (c) 2021 by tsimenis (https://codepen.io/tsimenis/pen/BKdENX) */
 .navLink {
   position: relative;
   display: block;
   cursor: pointer;
-/*   background-color:green; */
 }
-
 .navLink:before, span:after {
   /* background-color:green; */
   content: '';
@@ -92,7 +88,6 @@ nav a:visited{
   margin-top: -3px;
   background: green;
 }
-
 .navLink:before {
   left: -1.5px;
 }
@@ -101,19 +96,18 @@ nav a:visited{
   background: #ef116f;
   transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
-
 .navLink:hover:before {
   background: #ef116f;
   width: 100%;
   transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
-
 .navLink:hover:after {
   background: transparent;
   width: 100%;
   transition: 0s;
 }
 
+/* Landing page */
 .blurb{
   position:fixed;
   top:12rem;
@@ -145,8 +139,9 @@ nav a:visited{
   /* top: 12.5rem; */
   bottom: 4.5rem;
 }
+
+/* background settings */
 #particles-js{
-  /* color: #707070; */
   width: 100%;
   height: 100%;
   position:fixed;
@@ -158,5 +153,4 @@ nav a:visited{
   background-position: 50% 50%;
   background-repeat: no-repeat;
   z-index: -1;
-
 }
