@@ -27,30 +27,26 @@
         <div class="line"></div>
       </nav>
     </header>
+    <div class="formContainer">
+      <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mwkykpek" method="post">
+        <fieldset id="fs-frm-inputs">
+          <label id="label1" for="full-name">Name</label>
+          <input type="text" name="name" id="full-name" required>
+          <label id="label2" for="email-address">Email</label>
+          <input type="text" name="_replyto" id="email-address" required="">
+          <label id="label3" for="message">Message</label>
+          <textarea rows="4" name="message" id="message" style="overflow:auto; required=""></textarea>
+          <div class="g-recaptcha" data-sitekey="6Lf5JYwdAAAAAPIjlpa8k-B5ErjCaEtUEHHEYnwH"></div>
+          <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+        </fieldset>
+        <input type="submit" value="Submit" class="swing">
+      </form>
+    </div>
     <!-- animated background -->
     <div id="particles-js">
-      <div class="hCenter">
-        <div class="vCenter">
-          <div class="formContainer">
-            <form id="contact" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mwkykpek" method="post">
-              <fieldset id="fs-frm-inputs">
-                <label for="full-name">Name</label>
-                <input type="text" name="name" id="full-name" required>
-                <br>
-                <label for="email-address">Email</label>
-                <input type="email" name="_replyto" id="email-address" required="">
-                <br>
-                <label for="message">Message</label>
-                <textarea rows="5" name="message" id="message" required=""></textarea>
-                <br>
-                <div class="g-recaptcha" data-sitekey="6Lf5JYwdAAAAAPIjlpa8k-B5ErjCaEtUEHHEYnwH"></div>
-                <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
-              </fieldset>
-              <input type="submit" value="Submit" class="swing">
-            </form>
-          </div>
-        </div>
-      </div>
+
+
+
 
     </div>
   </body>
