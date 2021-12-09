@@ -1,4 +1,4 @@
-var form = document.getElementById("fs-frm");
+var form = document.getElementById("contact");
 
     async function handleSubmit(event) {
       event.preventDefault();
