@@ -256,14 +256,18 @@ fieldset{
 }
 #fs-frm textarea{
   border: 0px;
-  font-size: 2rem;
+  font-size: 1rem;
+  line-height: 1.25rem;
   font-family: quasimoda, sans-serif;
-  padding: 0em 1rem;
+  padding: 1em 1rem;
   margin-bottom: 1.5rem;
   width: 100%;
   border-bottom: 1px solid rgba(0,0,0,0.2);
   background-color: rgba(255,255,255,0.5);
   resize: vertical;
+}
+input:focus,textarea:focus{
+ outline: none;
 }
 #fs-frm input{
   border: 0px;
