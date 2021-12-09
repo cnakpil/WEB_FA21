@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="main.css" id="themeLink">
     <script src="js/main.js" defer></script>
     <script src="js/form.js" defer></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script src="js/particles.js-master/particles.js" defer></script>
     <script src="js/particles.js-master/app.js" defer></script>
   </head>
@@ -38,6 +39,7 @@
               <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
               <label for="message">Message</label>
               <textarea rows="5" name="message" id="message" placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla nullam quis risus." required=""></textarea>
+              <div class="g-recaptcha" data-sitekey="6Le7IowdAAAAAJ3oW8bsZPoSm_tgXpM0uJwkhA6p"></div>
               <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
             </fieldset>
             <input type="submit" value="Submit">
