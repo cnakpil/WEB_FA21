@@ -235,8 +235,8 @@ fieldset{
 }
 #fs-frm label{
   font-size: 1rem;
+  letter-spacing: .12rem;
   text-transform: uppercase;
-  margin-bottom: 0.5rem;
   padding-top: 0.2rem;
   display: flex;
   align-items: baseline;
@@ -250,43 +250,44 @@ fieldset{
 #label3{
   color: #f73c3a;
 }
+#fs-frm input{
+  border: 0px;
+  font-size: 2rem;
+  font-family: quasimoda, sans-serif;
+  /* padding: .25em 1rem; */
+  margin-bottom: 1.5rem;
+  background-color: rgba(255,255,255,0.5);
+}
 #fs-frm [type="text"]{
   width:100%;
   border-bottom: 1px solid rgba(0,0,0,0.2);
+  font-size: 1rem;
+  padding: .5rem 0rem 0rem 1rem;
+  color: #252266;
 }
 #fs-frm textarea{
   border: 0px;
   font-size: 1rem;
   line-height: 1.25rem;
   font-family: quasimoda, sans-serif;
-  padding: 1em 1rem;
+  color: #252266;
+  padding: .5rem 1rem;
   margin-bottom: 1.5rem;
   width: 100%;
   border-bottom: 1px solid rgba(0,0,0,0.2);
   background-color: rgba(255,255,255,0.5);
   resize: vertical;
 }
-input:focus,textarea:focus{
- outline: none;
-}
-#fs-frm input{
-  border: 0px;
-  font-size: 2rem;
-  font-family: quasimoda, sans-serif;
-  padding: 0em 1rem;
-  margin-bottom: 1.5rem;
-  background-color: rgba(255,255,255,0.5);
-}
 form input[type=submit]{
   border: 0px;
   /* width: 3rem; */
   text-transform: uppercase;
   color: #F63443;
-  letter-spacing: .15rem;
+  letter-spacing: .25rem;
   font-size: .8rem;
   font-weight: bold;
   transition:all 0.3s ease;
   cursor: pointer;
   position: relative;
-  left: 43%;
+  left: 40%;
 }
