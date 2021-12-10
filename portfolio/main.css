@@ -293,7 +293,6 @@ form input[type=submit]{
   position: relative;
   left: 40%;
 }
-<<<<<<< HEAD
 
 /* work grid settings */
 #workGrid{
@@ -303,16 +302,17 @@ form input[type=submit]{
   top:0;
   left:0;
   overflow:auto;
-  border: 1px solid #2d2d2d;
+  /* border: 1px solid #2d2d2d; */
   display: flex;
   justify-content: center;
   z-index: -1;
+  /* background-color: yellow; */
 }
 .gridContainer{
   width: 43rem;
   padding: 12px;
   display: inline-block;
-  height: 75rem;
+  height: 81rem;
   display: grid;
   grid-template-columns: 1fr 1fr ;
   grid-template-rows: .35fr 1fr 1fr 1fr;
@@ -335,17 +335,16 @@ form input[type=submit]{
   grid-column-end: 3;
 }
 #stars{
-  background-color: green;
+  /* background-color: green; */
   grid-row-start: 4;
   grid-row-end: 5;
   grid-column-start: 1;
   grid-column-end: 3;
+  position: relative;
+  /* 16:9, for an aspect ratio of 1:1 change to this value to 100% */
 }
 #stars iframe{
-  width: 100%;
-  height: 100%;
-=======
-input:focus, textarea:focus{
-  outline:none;
->>>>>>> 54f09f01548c145d6608a920d73987075acb4378
+  width: 42.75rem;
+  height: 24.2rem;
+  border: 0px;
 }
