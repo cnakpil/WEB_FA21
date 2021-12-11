@@ -6,10 +6,22 @@ body{
   font-weight: 400;
   color: #252266;
 }
+h1{
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+}
+h2{
+  font-size: 1.75rem;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
 p{
   font-size: 1.2rem;
   margin: .5rem;
   padding: 0;
+  line-height: 1.5rem;
 }
 .hCenter{
   display: table;
@@ -312,13 +324,22 @@ form input[type=submit]{
   display: inline-block;
   height: 81rem;
   position: relative;
-  top: 2rem;
+  top: 6rem;
   display: grid;
   grid-template-columns: 1fr 1fr ;
   grid-template-rows: .35fr 2fr 2fr 1fr;
 }
 .gridItem{
   height: 100%;
+  padding-bottom: 1.5rem;
+}
+.gridItem p{
+  padding-left: 0;
+  margin-left: 0;
+
+}
+.gridItem h3{
+  margin-bottom:0;
 }
 #web{
   /* background-color: pink; */
@@ -327,12 +348,18 @@ form input[type=submit]{
   grid-column-start: 1;
   grid-column-end: 3;
 }
+#web h2{
+  color: #ff6a00;
+}
 #text{
   /* background-color: blue; */
   grid-row-start: 3;
   grid-row-end: 4;
   grid-column-start: 1;
   grid-column-end: 3;
+}
+#text h2{
+  color: #fb5020;
 }
 #stars{
   /* background-color: green; */
@@ -341,13 +368,18 @@ form input[type=submit]{
   grid-column-start: 1;
   grid-column-end: 3;
   position: relative;
+  padding-bottom: 3rem;
   /* 16:9, for an aspect ratio of 1:1 change to this value to 100% */
+}
+#stars h2{
+  color: #f73c3a;
 }
 #stars iframe{
   width: 42.75rem;
   height: 24.2rem;
   border: 0px;
-  padding-bottom: 5rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
 }
 .thumb{
   display:flex;
@@ -410,11 +442,20 @@ form input[type=submit]{
 }
 .imgContainer{
   position: relative;
-  top: 24rem;
+  top: 30rem;
   width: 43rem;
 }
 .imgContainer img{
   width: 43rem;
+}
+.imgContainer h1{
+  color: #ff6a00;
+}
+.imgContainer p{
+  margin-left:0;
+}
+#first{
+  margin-bottom: .5rem;
 }
 #lastPanel{
   width: 14.5rem;
