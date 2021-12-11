@@ -44,10 +44,8 @@ header{
   width: 100%;
   height: 4.3rem;
   padding-top: 1.5rem;
-  /* border: 1px red solid; */
 }
 .logo{
-  /* background-color: green; */
   width: 4.5rem;
   padding-left: 2rem;
   padding-top: .4rem;
@@ -57,25 +55,19 @@ nav{
   font-size: .9rem;
   font-weight: bold;
   padding-right: 2rem;
-  /* border: 1px blue solid; */
-  /* text-align:center; */
-  /* vertical-align: middle; */
 }
 nav ul{
   text-align: center;
-  /* border: 1px green solid; */
   display:inline-block;
 }
 nav li{
   list-style: none;
   display: inline-block;
   padding: 1rem .75rem;
-  /* border: 1px black solid; */
 }
 nav a{
   text-transform: uppercase;
   display:inline-block;
-  /* border: 1px green solid; */
 }
 nav a:link{
   color: #252266;
@@ -129,7 +121,6 @@ nav a:visited{
 }
 .name{
   position:absolute;
-  /* display: block; */
   text-align: center;
   top:16rem;
   left: 15rem;
@@ -143,15 +134,10 @@ nav a:visited{
   padding: 0;
 }
 #fName{
-  /* background: green; */
   right: 11.5rem;
-  /* bottom: 10rem; */
-  /* width: 62vw; */
 }
 #lName{
-  /* background: blue; */
   right: 8.9rem;
-  /* top: 12.5rem; */
   bottom: 4.5rem;
 }
 
@@ -343,7 +329,6 @@ form input[type=submit]{
   margin-bottom:0;
 }
 #web{
-  /* background-color: pink; */
   grid-row-start: 2;
   grid-row-end: 3;
   grid-column-start: 1;
@@ -353,7 +338,6 @@ form input[type=submit]{
   color: #ff6a00;
 }
 #text{
-  /* background-color: blue; */
   grid-row-start: 3;
   grid-row-end: 4;
   grid-column-start: 1;
@@ -363,7 +347,6 @@ form input[type=submit]{
   color: #fb5020;
 }
 #stars{
-  /* background-color: green; */
   grid-row-start: 4;
   grid-row-end: 5;
   grid-column-start: 1;
