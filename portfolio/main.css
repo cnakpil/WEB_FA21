@@ -311,22 +311,24 @@ form input[type=submit]{
   padding: 12px;
   display: inline-block;
   height: 81rem;
+  position: relative;
+  top: 2rem;
   display: grid;
   grid-template-columns: 1fr 1fr ;
-  grid-template-rows: .35fr 1fr 1fr 1fr;
+  grid-template-rows: .35fr 2fr 2fr 1fr;
 }
 .gridItem{
   height: 100%;
 }
 #web{
-  background-color: pink;
+  /* background-color: pink; */
   grid-row-start: 2;
   grid-row-end: 3;
   grid-column-start: 1;
   grid-column-end: 3;
 }
 #text{
-  background-color: blue;
+  /* background-color: blue; */
   grid-row-start: 3;
   grid-row-end: 4;
   grid-column-start: 1;
@@ -345,4 +347,85 @@ form input[type=submit]{
   width: 42.75rem;
   height: 24.2rem;
   border: 0px;
+  padding-bottom: 5rem;
+}
+.thumb{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+}
+.thumb span{
+  width: 16rem;
+  height: 15rem;
+  padding-top: 1rem;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.thumb img{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  -webkit-transition: 0.8s;
+  -moz-transition: 0.8s;
+  -o-transition: 0.8s;
+  -ms-transition: 0.8s;
+  transition: 0.8s;
+}
+.left{
+  margin-right: 1.75rem;
+}
+.right{
+  margin-left: 1.75rem;
+}
+
+/* code from: https://w3bits.com/css-image-hover-zoom/ */
+.thumbnail:hover {
+    -moz-transform: scale(1.1) rotate(0deg);
+    -webkit-transform: scale(1.1) rotate(0deg);
+    -o-transform: scale(1.1) rotate(0deg);
+    -ms-transform: scale(1.1) rotate(0deg);
+    transform: scale(1.1) rotate(0deg);
+    -webkit-transition: 0.35s;
+    -moz-transition: 0.35s;
+    -o-transition: 0.35s;
+    -ms-transition: 0.35s;
+    transition: 0.35s;
+}
+
+/* text page styling */
+.imgWrapper{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top:0;
+  left:0;
+  overflow:auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+}
+.imgContainer{
+  position: relative;
+  top: 24rem;
+  width: 43rem;
+}
+.imgContainer img{
+  width: 43rem;
+}
+#lastPanel{
+  width: 14.5rem;
+  position: relative;
+  left: 14.5rem;
+  padding-bottom: 5rem;
+}
+#posterContainer{
+  top: 17.7rem;
+}
+#back{
+  padding-top: 1rem;
+  padding-bottom: 5rem;
 }
