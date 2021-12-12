@@ -449,7 +449,10 @@ form input[type=submit]{
   top: 24.5rem;
   margin-bottom: 1rem;
 }
-#front{
+#posterFront{
+  top: 24rem;
+}
+#posterBack{
   top: 24rem;
 }
 #back{
