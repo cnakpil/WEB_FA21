@@ -446,8 +446,11 @@ form input[type=submit]{
   padding-bottom: 5rem;
 }
 #posterContainer{
-  top: 26rem;
+  top: 24.5rem;
   margin-bottom: 1rem;
+}
+#front{
+  top: 24rem;
 }
 #back{
   padding-top: 1rem;
