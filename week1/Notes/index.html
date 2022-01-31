@@ -1,43 +1,41 @@
 <!DOCTYPE html>
-<!-- The index page is the landing page;
-the first page a user sees when looking @ website -->
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>My First Site!</title>
-</head>
-<body>
-  <section> <!--for headers-->
-    <!-- allows for sectioning of the code. should only have one h1 per section-->
-    <!-- h1 is a header tag -->
-    <h1>Hello World!</h1>
-    <h2>Second</h2>
-    <h3>Third</h3>
-    <h4>Fourth</h4>
-    <h5>Fifth</h5>
-    <h6>Sixth</h6>
-  </section>
-
-  <section> <!--for lists-->
-    <h1>This is the second section.</h1>
-    <ul> <!-- This is an unordered list -->
-      <!-- This creates a bullet point -->
-      <li>This is the first item</li>
-      <li>The second item</li>
-      <li>So on, and so forth.</li>
-    </ul>
-    <ol><!-- This is an ordered list -->
-      <li>This is the first item</li>
-      <li>The second item</li>
-      <li>So on, and so forth.</li>
-    </ol>
-  </section>
-
-  <section> <!--for paragraphs-->
-    <p>This is a paragraph.</p><!-- paragraph tag for body text -->
-    <p>This is <s>another</s> paragraph.</p>
-    <p><strong>This bolds text</strong></p>
-    <p><em>This is italic text.</em></p>
-  </section>
-</body>
+<!-- The index page is the landing page; the first page a user sees when looking @ website -->
+<!-- The structure of an HTML is such that there is only one html element that "encases" everything in it. -->
+<html lang="en"> <!-- Establish the language of your html file in the starting <html> tag by using the lang (language) attribute -->
+  <head>
+    <meta charset="utf-8">
+    <title>My First Site!</title>
+  </head>
+  <body>
+    <section id="headers">
+      <!-- section tags allow for "sectioning" of the code. should only have one h1 per section. Group relevent elements/text together using sections.-->
+      <!-- h1-6 are a header tags. These are block elements that will create a new block (like a new paragraph in a text editor) -->
+      <h1>Hello World!</h1>
+      <h2>Second</h2>
+      <h3>Third</h3>
+      <h4>Fourth</h4>
+      <h5>Fifth</h5>
+      <h6>Sixth</h6>
+    </section>
+    <section id="lists">
+      <h1>This is the second section.</h1>
+      <ul> <!-- This is the tag for an unordered list -->
+        <!-- This creates a list item (li) -->
+        <li>This is the first item</li>
+        <li>The second item</li>
+        <li>So on, and so forth.</li>
+      </ul>
+      <ol><!-- This is an ordered list -->
+        <li>This is the first item</li>
+        <li>The second item</li>
+        <li>So on, and so forth.</li>
+      </ol>
+    </section>
+    <section id = "paragraphs">
+      <p>This is a paragraph.</p><!-- paragraph tag for body text -->
+      <p>This is <s>another</s> paragraph.</p>
+      <p><strong>This bolds text</strong></p>
+      <p><em>This is italic text.</em></p>
+    </section>
+  </body>
 </html>
