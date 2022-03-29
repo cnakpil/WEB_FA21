@@ -19,16 +19,16 @@ function androids(){
   document.getElementById("time").addEventListener("click", time);
 }
 function bytes(){
+  document.body.style.backgroundImage = "url('./assets/AI.png')";
   document.getElementById("line2").innerHTML = "moments of life stored in bytes";
   document.getElementById("line3").innerHTML = "immortality";
   document.getElementById("restart").innerHTML = "restart";
-  document.body.style.backgroundImage = "url('./assets/AI.png')";
 }
 function time(){
+  document.body.style.backgroundImage = "url('./assets/bladerunner.png')";
   document.getElementById("line2").innerHTML = "moments of life lost to time";
   document.getElementById("line3").innerHTML = "gone like tears in rain";
   document.getElementById("restart").innerHTML = "restart";
-  document.body.style.backgroundImage = "url('./assets/bladerunner.png')";
 }
 function humans(){
   document.getElementById("line1").innerHTML = "what do humans dream?";
@@ -37,14 +37,14 @@ function humans(){
   document.getElementById("fires").addEventListener("click", fires);
 }
 function flares(){
+  document.body.style.backgroundImage = "url('./assets/galaxies.png')";
   document.getElementById("line2").innerHTML = "of solar flares burning bright";
   document.getElementById("line3").innerHTML = "tiny galaxies";
   document.getElementById("restart").innerHTML = "restart";
-  document.body.style.backgroundImage = "url('./assets/galaxies.png')";
 }
 function fires(){
+  document.body.style.backgroundImage = "url('./assets/dragon.png')";
   document.getElementById("line2").innerHTML = "of wildfires burning bright";
   document.getElementById("line3").innerHTML = "scorched from dragon's breath";
   document.getElementById("restart").innerHTML = "restart";
-  document.body.style.backgroundImage = "url('./assets/dragon.png')";
 }
