@@ -1,4 +1,4 @@
-imgObj = new Image();
+let imgObj = new Image();
 
 imgNames = new Array();
 imgNames[0] = "./assets/AI.png";
